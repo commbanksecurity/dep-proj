@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy-950: #040b20;
+  --color-navy-900: #08163a;
+  --color-navy-800: #0d2152;
+  --color-navy-700: #14306e;
+  --color-navy-600: #1e418c;
+  --color-gold-200: #fbe9b7;
+  --color-gold-300: #f6d98a;
+  --color-gold-400: #ecc35e;
+  --color-gold-500: #d9a63f;
+  --color-gold-600: #b8862b;
+  --color-gold-700: #8e6520;
+  --color-mist: #f3f5fa;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-playfair), ui-serif, Georgia, serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #ffffff;
+  color: #0f1b33;
+}
+
+@utility text-gold-gradient {
+  background: linear-gradient(180deg, #fbe39c 0%, #ecc35e 45%, #c8932f 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@utility bg-gold-gradient {
+  background: linear-gradient(180deg, #f8db86 0%, #ecbe55 50%, #d9a13a 100%);
+}
+
+@utility bg-navy-gradient {
+  background: radial-gradient(120% 120% at 70% 0%, #163a85 0%, #0b1c48 45%, #050d26 100%);
+}
+
+@utility gold-ring {
+  box-shadow:
+    inset 0 0 0 1px rgba(236, 195, 94, 0.35),
+    0 10px 30px -12px rgba(0, 0, 0, 0.5);
+}
+
+@utility gold-divider {
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #ecc35e 20%, #f6d98a 50%, #ecc35e 80%, transparent);
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@utility animate-rise {
+  animation: rise 0.7s ease-out both;
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.35;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@utility animate-twinkle {
+  animation: twinkle 3s ease-in-out infinite;
+}
