@@ -29,8 +29,10 @@ export const nav = [
   { href: "/", label: "Home" },
   { href: "/investments", label: "Investments" },
   { href: "/how-it-works", label: "How It Works" },
-  { href: "/about", label: "About Us" },
+  { href: "/about-us", label: "About Us" },
   { href: "/reviews", label: "Reviews" },
+  { href: "/faqs", label: "FAQs" },
+  { href: "/insights", label: "Insights" },
   { href: "/contact", label: "Contact" },
 ] as const;
 
@@ -159,7 +161,7 @@ export const steps = [
   },
   {
     title: "Track Your Growth",
-    text: "Monitor your balance, returns and statements in the client portal.",
+    text: "Monitor your balance, returns and statements in the investor portal.",
     icon: "chart",
   },
 ] as const;

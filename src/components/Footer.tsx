@@ -28,7 +28,7 @@ export function Footer() {
             ))}
             <li>
               <Link href="/portal" className="hover:text-gold-300">
-                Client Portal
+                Investor Portal
               </Link>
             </li>
           </ul>

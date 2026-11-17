@@ -4,7 +4,7 @@ import { BellRing, FileText, LineChart, ShieldCheck } from "lucide-react";
 import { AuthCard } from "@/components/portal/AuthCard";
 import { PageHero } from "@/components/ui";
 
-export const metadata: Metadata = { title: "Client Portal" };
+export const metadata: Metadata = { title: "Investor Portal" };
 
 const perks = [
   { icon: LineChart, t: "Track performance", d: "See your balance and returns at a glance." },
@@ -16,7 +16,7 @@ const perks = [
 export default function PortalPage() {
   return (
     <>
-      <PageHero title="Client Portal" subtitle="Manage Your Investments Online">
+      <PageHero title="Investor Portal" subtitle="Manage Your Investments Online">
         <p>Access your account, track performance and manage your investments securely.</p>
       </PageHero>
       <section className="bg-mist py-16">

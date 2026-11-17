@@ -1,8 +1,12 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
+import { img, type Article } from "@/lib/content";
 import {
   ArrowRight,
   CalendarDays,
+  ChevronRight,
+  CircleCheck,
   ChartNoAxesCombined,
   Gem,
   Info,
@@ -55,19 +59,145 @@ export function SectionHeading({
   );
 }
 
-export function PageHero({ title, subtitle, children }: { title: string; subtitle: string; children?: ReactNode }) {
+export function Photo({
+  id,
+  alt,
+  className = "",
+  sizes = "100vw",
+  priority = false,
+}: {
+  id: string;
+  alt: string;
+  className?: string;
+  sizes?: string;
+  priority?: boolean;
+}) {
+  return (
+    <div className={`relative overflow-hidden ${className}`}>
+      <Image src={img(id)} alt={alt} fill sizes={sizes} priority={priority} className="object-cover" />
+    </div>
+  );
+}
+
+export function Eyebrow({ children, light = false }: { children: ReactNode; light?: boolean }) {
+  return (
+    <p className={`mb-3 text-xs font-semibold uppercase tracking-[0.2em] ${light ? "text-gold-300" : "text-gold-700"}`}>
+      {children}
+    </p>
+  );
+}
+
+export function PageHero({
+  title,
+  subtitle,
+  eyebrow,
+  photo,
+  children,
+}: {
+  title: string;
+  subtitle: string;
+  eyebrow?: string;
+  photo?: string;
+  children?: ReactNode;
+}) {
   return (
     <section className="bg-navy-gradient relative overflow-hidden">
-      <HarbourScene className="absolute inset-y-0 right-0 h-full w-full opacity-60 [mask-image:linear-gradient(to_right,transparent_10%,black_70%)] lg:w-3/4" />
-      <div className="relative mx-auto max-w-7xl px-5 py-20 lg:px-8 lg:py-24">
-        <div className="animate-rise max-w-xl">
-          <h1 className="font-serif text-4xl text-white sm:text-5xl">{title}</h1>
-          <p className="mt-3 text-xl text-gold-300">{subtitle}</p>
-          {children && <div className="mt-6 text-white/80">{children}</div>}
+      {photo ? (
+        <>
+          <Image src={img(photo)} alt="" fill priority sizes="100vw" className="object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-950/85 to-navy-900/30" />
+        </>
+      ) : (
+        <HarbourScene className="absolute inset-y-0 right-0 h-full w-full opacity-60 [mask-image:linear-gradient(to_right,transparent_10%,black_70%)] lg:w-3/4" />
+      )}
+      <div className="relative mx-auto max-w-7xl px-5 py-20 lg:px-8 lg:py-28">
+        <nav aria-label="Breadcrumb" className="mb-6 flex items-center gap-1 text-xs text-white/60">
+          <Link href="/" className="hover:text-gold-300">Home</Link>
+          <ChevronRight className="h-3 w-3" />
+          <span className="text-gold-300">{eyebrow ?? title}</span>
+        </nav>
+        <div className="animate-rise max-w-2xl">
+          <h1 className="font-serif text-4xl leading-tight text-white sm:text-5xl lg:text-6xl">{title}</h1>
+          <p className="mt-4 text-xl text-gold-300">{subtitle}</p>
+          {children && <div className="mt-6 text-lg text-white/80">{children}</div>}
         </div>
       </div>
       <div className="gold-divider" />
     </section>
+  );
+}
+
+/** Sticky in-page section navigation, like large financial-services sites use on long pages. */
+export function SubNav({ items }: { items: { id: string; label: string }[] }) {
+  return (
+    <div className="sticky top-20 z-40 border-b border-slate-200 bg-white/95 backdrop-blur">
+      <div className="mx-auto flex max-w-7xl gap-6 overflow-x-auto px-5 lg:px-8">
+        {items.map((i) => (
+          <a
+            key={i.id}
+            href={`#${i.id}`}
+            className="whitespace-nowrap border-b-2 border-transparent py-4 text-sm font-medium text-slate-600 transition hover:border-gold-500 hover:text-navy-900"
+          >
+            {i.label}
+          </a>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+export function StatBand({ stats }: { stats: { value: string; label: string }[] }) {
+  return (
+    <div className="grid gap-px overflow-hidden rounded-2xl border border-gold-500/25 bg-white/10 sm:grid-cols-2 lg:grid-cols-4">
+      {stats.map((s) => (
+        <div key={s.label} className="bg-navy-900 px-6 py-8 text-center">
+          <p className="font-serif text-4xl text-gold-gradient">{s.value}</p>
+          <p className="mt-2 text-sm text-white/70">{s.label}</p>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+export function CheckList({ items, light = false }: { items: string[]; light?: boolean }) {
+  return (
+    <ul className="space-y-3">
+      {items.map((t) => (
+        <li key={t} className={`flex gap-3 ${light ? "text-white/85" : "text-slate-700"}`}>
+          <CircleCheck className="mt-0.5 h-5 w-5 shrink-0 text-gold-500" />
+          <span>{t}</span>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+export function PreviewNotice({ children }: { children: ReactNode }) {
+  if (!site.showSampleReviewNotice) return null;
+  return (
+    <p className="mx-auto mb-8 max-w-2xl rounded-lg border border-dashed border-gold-500 bg-gold-200/30 px-4 py-2 text-center text-xs text-gold-700">
+      {children}
+    </p>
+  );
+}
+
+export function ArticleCard({ a }: { a: Article }) {
+  return (
+    <Link
+      href={`/insights/${a.slug}`}
+      className="group flex h-full flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
+    >
+      <Photo id={a.photo} alt="" sizes="(min-width: 1024px) 33vw, 100vw" className="aspect-[16/10] transition group-hover:brightness-110" />
+      <div className="flex flex-1 flex-col p-6">
+        <p className="text-xs font-semibold uppercase tracking-wider text-gold-700">{a.category}</p>
+        <h3 className="mt-2 font-serif text-xl leading-snug text-navy-900 group-hover:text-gold-700">{a.title}</h3>
+        <p className="mt-3 flex-1 text-sm text-slate-600">{a.excerpt}</p>
+        <p className="mt-5 flex items-center justify-between text-xs text-slate-500">
+          <span>{a.date} · {a.readMins} min read</span>
+          <ArrowRight className="h-4 w-4 text-gold-600 transition group-hover:translate-x-1" />
+        </p>
+      </div>
+    </Link>
   );
 }
 

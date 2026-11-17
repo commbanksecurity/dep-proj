@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     template: "%s | Golden Treasure Capital",
   },
   description:
-    "Fixed-term investment opportunities for Australians. 6, 12 and 24-month terms, online sign-up, secure client portal. Returns are variable and not guaranteed.",
+    "Fixed-term investment opportunities for Australians. 6, 12 and 24-month terms, online sign-up, secure investor portal. Returns are variable and not guaranteed.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

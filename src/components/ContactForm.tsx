@@ -48,6 +48,7 @@ export function ContactForm() {
       <select name="topic" className={inputCls} defaultValue="General enquiry">
         <option>General enquiry</option>
         <option>Investment options</option>
+        <option>Book a consultation</option>
         <option>My account</option>
         <option>SMSF / company investing</option>
         <option>Complaint</option>

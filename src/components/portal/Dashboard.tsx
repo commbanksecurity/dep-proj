@@ -52,7 +52,7 @@ export function Dashboard() {
     <div className="mx-auto max-w-7xl px-5 py-10 lg:px-8">
       <div className="flex flex-wrap items-center justify-between gap-4">
         <div>
-          <p className="text-sm text-slate-500">Client Portal</p>
+          <p className="text-sm text-slate-500">Investor Portal</p>
           <h1 className="font-serif text-3xl text-navy-900">Welcome back{firstName && `, ${firstName}`}</h1>
         </div>
         <div className="flex gap-3">

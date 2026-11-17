@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { notFound } from "next/navigation";
 import { PageHero } from "@/components/ui";
 import { site } from "@/lib/site";
@@ -38,7 +39,7 @@ const pages: Record<string, { title: string; subtitle: string; sections: { h: st
   },
   terms: {
     title: "Terms & Conditions",
-    subtitle: "Website and client portal terms of use",
+    subtitle: "Website and investor portal terms of use",
     sections: [
       { h: "Use of this website", p: "Information on this website is general in nature and does not constitute personal financial advice." },
       { h: "Your account", p: "You are responsible for keeping your login details secure and for all activity under your account." },
@@ -65,7 +66,15 @@ export async function generateMetadata({ params }: PageProps<"/legal/[slug]">): 
   return { title: pages[slug]?.title ?? "Legal" };
 }
 
-export default async function LegalPage({ params }: PageProps<"/legal/[slug]">) {
+export default function LegalPage(props: PageProps<"/legal/[slug]">) {
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-navy-950" />}>
+      <Content params={props.params} />
+    </Suspense>
+  );
+}
+
+async function Content({ params }: { params: PageProps<"/legal/[slug]">["params"] }) {
   const { slug } = await params;
   const page = pages[slug];
   if (!page) notFound();
