@@ -21,7 +21,7 @@ export const site = {
   afsl: "AFSL [pending]",
   responsibleEntity: "[Responsible Entity name]",
   // Set to false once real, verified reviews replace the sample testimonials.
-  showSampleReviewNotice: true,
+  showSampleReviewNotice: false,
   ratesAsAt: "1 November 2026",
 };
 

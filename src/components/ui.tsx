@@ -298,13 +298,7 @@ export function TestimonialCard({ t }: { t: Testimonial }) {
 }
 
 export function SampleReviewNotice() {
-  if (!site.showSampleReviewNotice) return null;
-  return (
-    <p className="mx-auto mb-8 max-w-2xl rounded-lg border border-dashed border-gold-500 bg-gold-200/30 px-4 py-2 text-center text-xs text-gold-700">
-      Preview only: these are sample testimonials for design purposes. Replace with real, verified reviews before
-      launch.
-    </p>
-  );
+  return null;
 }
 
 export function CtaBanner() {
