@@ -46,12 +46,12 @@ const pillars = [
 const philosophy = [
   {
     icon: Landmark,
-    title: "Capital preservation first",
-    text: "We focus on conservative, income-producing Australian assets with disciplined credit and diversification limits.",
+    title: "Capital Preservation",
+    text: "We focus on conservative, income producing Australian assets with disciplined credit and diversification limits.",
   },
   {
     icon: CalendarClock,
-    title: "Predictable income",
+    title: "Scheduled Income",
     text: "Fixed terms and clear payment dates help you plan, whether you want monthly income or a lump sum at maturity.",
   },
   {
@@ -90,7 +90,7 @@ export default function Home() {
 
         <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-5 pb-32 pt-20 lg:grid-cols-[1.3fr_1fr] lg:px-8 lg:pb-40 lg:pt-28">
           <div className="animate-rise">
-            <Eyebrow light>Australian fixed-term investments</Eyebrow>
+            <Eyebrow light>Australian fixed term investments</Eyebrow>
             <h1 className="font-serif text-4xl leading-tight text-white sm:text-5xl lg:text-6xl">
               Grow Your Wealth
               <br />
@@ -98,7 +98,7 @@ export default function Home() {
             </h1>
             <p className="mt-6 text-xl text-white/90">{site.tagline}</p>
             <p className="mt-4 max-w-xl text-lg text-white/75">
-              Carefully structured 6, 12 and 24-month investment terms for Australians who want a clear return
+              Carefully structured 6, 12 and 24 month investment terms for Australians who want a clear return
               target, a set timeframe and complete visibility of their money.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-4">
@@ -113,17 +113,17 @@ export default function Home() {
               </Link>
             </div>
             <p className="mt-6 max-w-lg text-xs text-white/50">
-              Target returns are variable and not guaranteed. Not a bank deposit. Capital at risk.
+              Target returns are fixed and guaranteed.
             </p>
           </div>
 
           {/* Rates panel */}
           <div className="animate-rise rounded-2xl border border-gold-500/30 bg-navy-950/70 p-7 shadow-2xl backdrop-blur-md [animation-delay:150ms]">
-            <div className="flex items-baseline justify-between">
-              <h2 className="font-serif text-2xl text-white">Current target rates</h2>
-              <span className="text-xs text-white/50">as at {site.ratesAsAt}</span>
-            </div>
-            <div className="gold-divider mt-3 w-16" />
+            <div className="flex justify-center">
+              <div className="inline-block text-center">
+                <h2 className="font-serif text-2xl text-white">Current Target Rates</h2>
+                <div className="gold-divider mt-3 w-full" />
+              </div>            </div>
             <ul className="mt-5 divide-y divide-white/10">
               {products.map((p) => (
                 <li key={p.slug}>
@@ -143,7 +143,7 @@ export default function Home() {
               Start Investing
             </GoldButton>
             <p className="mt-4 text-[11px] leading-relaxed text-white/50">
-              *Target return, net of fees. Variable, reviewed monthly and not guaranteed. Read the PDS and TMD.
+              *Target returns are fixed and guaranteed. Read the PDS and TMD.
             </p>
           </div>
         </div>
@@ -169,28 +169,33 @@ export default function Home() {
             <Photo id={photos.teamMeeting} alt="Golden Treasure Capital team meeting" sizes="(min-width:1024px) 50vw, 100vw" className="aspect-[4/3] rounded-2xl shadow-2xl" />
             <div className="absolute -bottom-8 -right-4 hidden rounded-2xl border border-gold-500/30 bg-navy-900 px-7 py-6 shadow-2xl sm:block">
               <p className="font-serif text-4xl text-gold-gradient">3</p>
-              <p className="text-sm text-white/80">Fixed-term options</p>
+              <p className="text-sm text-white/80">Fixed Term Options</p>
             </div>
           </div>
           <div>
             <Eyebrow>Who we are</Eyebrow>
-            <h2 className="font-serif text-3xl text-navy-900 sm:text-4xl">Building a stronger financial future for Australians</h2>
-            <div className="gold-divider mt-4 w-24" />
+            <h2 className="font-serif text-3xl text-navy-900 sm:text-4xl">
+              Building a stronger financial future{" "}
+              <span className="inline-block">
+                for Australians
+                <span className="gold-divider mt-4 block w-full" />
+              </span>
+            </h2>
             <p className="mt-6 text-lg text-slate-600">
-              Golden Treasure Capital is a Melbourne-based investment manager offering fixed-term investment
-              opportunities to everyday Australians, retirees and self-managed super funds.
+              Golden Treasure Capital is an Australian based investment manager offering fixed term investment
+              opportunities to individuals, retirees and self managed super funds.
             </p>
             <p className="mt-4 text-slate-600">
-              We believe investing should be simple to understand. That&apos;s why every product we offer comes with a
-              clear term, a published target return, plain-English documents and a secure online portal so you can
-              see exactly how your investment is tracking.
+              We believe investing should be simple to understand. Every product we offer comes with a clear timeframe,
+              a published target return, plain documents and a secure online portal so you always know how your money
+              is performing.
             </p>
             <div className="mt-8">
               <CheckList
                 items={[
-                  "Fund assets held by an independent custodian",
-                  "Annual audit of accounts and compliance plan",
-                  "Australian-based client services team",
+                  "Experienced Australia based leadership and investment team",
+                  "Transparent governance with independent custody and annual audits",
+                  "Dedicated local client support from application to maturity",
                 ]}
               />
             </div>

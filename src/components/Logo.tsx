@@ -17,16 +17,14 @@ export function LogoMark({ className = "h-12 w-12" }: { className?: string }) {
         strokeWidth="3.5"
         strokeLinejoin="round"
       />
-      {/* G */}
-      <path
-        d="M30 20 h-7 a8 8 0 0 0 -8 8 v8 a8 8 0 0 0 8 8 h7 v-11 h-7"
-        fill="none"
-        stroke="url(#lg-gold)"
-        strokeWidth="4.5"
-        strokeLinecap="square"
-      />
-      {/* T */}
-      <path d="M34 20 h16 M42 20 v24" fill="none" stroke="url(#lg-gold)" strokeWidth="4.5" strokeLinecap="square" />
+      <g fill="none" stroke="url(#lg-gold)" strokeWidth="3.5" strokeLinecap="butt" strokeLinejoin="miter">
+        {/* G */}
+        <path d="M21.5 21 h-4 a5 5 0 0 0 -5 5 v12 a5 5 0 0 0 5 5 h4 v-9 h-4" />
+        {/* T */}
+        <path d="M25.5 21 h12 M31.5 21 v22" />
+        {/* C */}
+        <path d="M51.5 21 h-5 a5 5 0 0 0 -5 5 v12 a5 5 0 0 0 5 5 h5" />
+      </g>
     </svg>
   );
 }

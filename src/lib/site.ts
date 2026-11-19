@@ -10,7 +10,7 @@
 export const site = {
   name: "Golden Treasure Capital",
   shortName: "GTC",
-  tagline: "Secure. Transparent. Built for Long-Term Growth.",
+  tagline: "Secure. Transparent. Built for Long Term Growth.",
   // PLACEHOLDER contact details (taken from the design mockup)
   phone: "1300 123 456",
   email: "info@goldentreasurecapital.com.au",
@@ -52,14 +52,14 @@ export type Product = {
 export const products: Product[] = [
   {
     slug: "6-month",
-    name: "6-Month Term",
+    name: "6 Month Term",
     termMonths: 6,
-    minimum: 1000,
-    targetRate: 5.25,
+    minimum: 10000,
+    targetRate: 7.35,
     summary: "Shorter commitment with flexible terms.",
     icon: "calendar",
     features: [
-      "Minimum investment $1,000",
+      "Minimum investment $10,000",
       "Return paid at maturity",
       "Option to reinvest at maturity",
       "Track online 24/7",
@@ -67,14 +67,14 @@ export const products: Product[] = [
   },
   {
     slug: "12-month",
-    name: "12-Month Term",
+    name: "12 Month Term",
     termMonths: 12,
-    minimum: 1000,
-    targetRate: 6.25,
+    minimum: 25000,
+    targetRate: 10.85,
     summary: "Balanced growth and stability.",
     icon: "chart",
     features: [
-      "Minimum investment $1,000",
+      "Minimum investment $25,000",
       "Monthly or at-maturity returns",
       "Option to reinvest at maturity",
       "Track online 24/7",
@@ -82,14 +82,14 @@ export const products: Product[] = [
   },
   {
     slug: "24-month",
-    name: "24-Month Term",
+    name: "24 Month Term",
     termMonths: 24,
-    minimum: 5000,
-    targetRate: 7.0,
+    minimum: 25000,
+    targetRate: 12.25,
     summary: "Longer term for a higher target return.",
     icon: "diamond",
     features: [
-      "Minimum investment $5,000",
+      "Minimum investment $25,000",
       "Monthly or at-maturity returns",
       "Option to reinvest at maturity",
       "Track online 24/7",
