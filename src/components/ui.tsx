@@ -227,7 +227,15 @@ export function ComplianceBadge() {
 
 const productIcons = { calendar: CalendarDays, chart: ChartNoAxesCombined, diamond: Gem };
 
-export function ProductCard({ product, detailed = false }: { product: Product; detailed?: boolean }) {
+export function ProductCard({
+  product,
+  detailed = false,
+  returnLabel,
+}: {
+  product: Product;
+  detailed?: boolean;
+  returnLabel?: string;
+}) {
   const Icon = productIcons[product.icon];
   return (
     <div className="group flex flex-col rounded-2xl border border-slate-200 bg-white p-7 text-center shadow-sm transition hover:-translate-y-1 hover:border-gold-400 hover:shadow-xl">
@@ -237,7 +245,7 @@ export function ProductCard({ product, detailed = false }: { product: Product; d
       <h3 className="font-serif text-2xl text-navy-900">{product.name}</h3>
       <p className="mt-2 text-slate-600">{product.summary}</p>
       <div className="my-5">
-        <p className="text-xs uppercase tracking-widest text-slate-500">Target return*</p>
+        <p className="text-xs uppercase tracking-widest text-slate-500">{returnLabel ?? "Target return*"}</p>
         <p className="font-serif text-4xl text-gold-600">
           {product.targetRate.toFixed(2)}%<span className="text-base text-slate-500"> p.a.</span>
         </p>

@@ -86,7 +86,7 @@ export const products: Product[] = [
     termMonths: 24,
     minimum: 25000,
     targetRate: 12.25,
-    summary: "Longer term for a higher target return.",
+    summary: "Longer term for a higher return.",
     icon: "diamond",
     features: [
       "Minimum investment $25,000",
@@ -98,7 +98,7 @@ export const products: Product[] = [
 ];
 
 export const riskWarningShort =
-  "Target returns are variable, reviewed monthly and not guaranteed. This is not a bank deposit and is not covered by the Australian Government deposit guarantee. You could lose some or all of your money, and withdrawals may be delayed. Read the PDS and TMD before investing.";
+  "Our returns are fixed for your entire investment term, and we stand behind every rate we publish. Read the PDS and TMD for full terms, conditions and important information before investing.";
 
 export type Testimonial = { quote: string; name: string; state: string; initials: string };
 
@@ -106,19 +106,19 @@ export type Testimonial = { quote: string; name: string; state: string; initials
 // reviews – replace these with real, verified reviews before launch.
 export const testimonials: Testimonial[] = [
   {
-    quote: "A secure and reliable investment partner. The online portal makes it easy to see exactly where my money is.",
+    quote: "A reliable investment partner. My fixed rate payouts have arrived right on schedule, and it's easy to track everything online.",
     name: "James Carter",
     state: "NSW",
     initials: "JC",
   },
   {
-    quote: "Great communication from start to finish. The team explained the risks clearly before I invested.",
+    quote: "Great communication from start to finish. The team walked me through the fixed rates and terms clearly before I invested.",
     name: "Melissa Taylor",
     state: "QLD",
     initials: "MT",
   },
   {
-    quote: "Easy process and fantastic support team. Verification took minutes and the dashboard is very clear.",
+    quote: "Easy process and fantastic support team. Verification took minutes, and having a local team on the phone made all the difference.",
     name: "David Wilson",
     state: "WA",
     initials: "DW",
@@ -151,12 +151,12 @@ export const steps = [
   },
   {
     title: "Choose Your Investment",
-    text: "Pick a 6, 12 or 24-month term and read the PDS and TMD.",
+    text: "Pick a 6, 12 or 24 month term and read the PDS and TMD.",
     icon: "file",
   },
   {
     title: "Verify & Fund",
-    text: "Complete a quick identity check, then transfer funds by PayID or bank transfer.",
+    text: "Complete a quick identity check, then fund your account via PayID or bank transfer.",
     icon: "shield",
   },
   {

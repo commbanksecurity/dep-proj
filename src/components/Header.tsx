@@ -28,7 +28,7 @@ export function Header() {
     <>
     <div className="hidden border-b border-white/10 bg-navy-900 text-xs text-white/70 lg:block">
       <div className="mx-auto flex h-9 max-w-7xl items-center justify-between px-5 lg:px-8">
-        <p>Australian Fixed Term Investments &middot; Target Rates 2026</p>
+        <p>Australian Fixed Term Investments &middot; Fixed Rates 2026</p>
         <div className="flex items-center gap-5">
           <a href={`tel:${site.phone.replace(/ /g, "")}`} className="flex items-center gap-1.5 hover:text-gold-300"><Phone className="h-3.5 w-3.5 text-gold-400" />{site.phone}</a>
           <a href={`mailto:${site.email}`} className="flex items-center gap-1.5 hover:text-gold-300"><Mail className="h-3.5 w-3.5 text-gold-400" />{site.email}</a>

@@ -38,7 +38,7 @@ import { formatAUD, products, site, steps, testimonials } from "@/lib/site";
 
 const pillars = [
   { icon: ShieldCheck, title: "Secure & Compliant", text: "Independent custody, audited annually" },
-  { icon: ChartNoAxesColumnIncreasing, title: "Competitive Target Returns", text: "Shown after fees, reviewed monthly" },
+  { icon: ChartNoAxesColumnIncreasing, title: "Competitive Returns", text: "Shown after fees, reviewed monthly" },
   { icon: Handshake, title: "Dedicated Support", text: "Australian team, every step of the way" },
   { icon: Trophy, title: "Built for Australians", text: "Individuals, SMSFs, companies & trusts" },
 ];
@@ -56,18 +56,18 @@ const philosophy = [
   },
   {
     icon: Scale,
-    title: "Radical transparency",
-    text: "Rates, fees and risks are always shown side by side, in plain English, with a PDS you can actually read.",
+    title: "Complete Transparency",
+    text: "Rates, fees and risks are always shown side by side in a PDS you can actually read",
   },
 ];
 
 const benefits = [
-  { icon: BadgeDollarSign, title: "Start from $1,000", text: "Accessible minimums so you can begin at a level that suits you." },
-  { icon: CalendarClock, title: "Choice of terms", text: "6, 12 or 24 months, with monthly or at-maturity return options." },
-  { icon: FileText, title: "No fees at maturity", text: "No application or exit fees. Target rates are shown after fees." },
+  { icon: BadgeDollarSign, title: "Start from $10,000", text: "Accessible minimums so you can begin at a level that suits you." },
+  { icon: CalendarClock, title: "Choice of terms", text: "6, 12 or 24 months, with monthly or at maturity payout options." },
+  { icon: FileText, title: "No entry or exit fees", text: "Zero hidden charges. Fixed rates are shown net of fees." },
   { icon: MonitorSmartphone, title: "24/7 investor portal", text: "Track balances, returns and statements from any device." },
-  { icon: LockKeyhole, title: "Strong security", text: "Two-factor login, encryption and Australian-hosted data." },
-  { icon: Headset, title: "Real people", text: "Speak to our Melbourne-based team, not a call centre overseas." },
+  { icon: LockKeyhole, title: "Strong security", text: "Two factor login, encryption and Australian hosted data." },
+  { icon: Headset, title: "Real people", text: "Speak to our Australian team, not a call centre overseas." },
 ];
 
 const explore = [
@@ -98,8 +98,8 @@ export default function Home() {
             </h1>
             <p className="mt-6 text-xl text-white/90">{site.tagline}</p>
             <p className="mt-4 max-w-xl text-lg text-white/75">
-              Carefully structured 6, 12 and 24 month investment terms for Australians who want a clear return
-              target, a set timeframe and complete visibility of their money.
+              Carefully structured 6, 12 and 24 month investment terms for Australians who want a clear fixed return,
+              a set timeframe and complete visibility of their money.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-4">
               <GoldButton href="/investments" size="lg">
@@ -113,7 +113,7 @@ export default function Home() {
               </Link>
             </div>
             <p className="mt-6 max-w-lg text-xs text-white/50">
-              Target returns are fixed and guaranteed.
+              Returns are fixed and guaranteed.
             </p>
           </div>
 
@@ -121,7 +121,7 @@ export default function Home() {
           <div className="animate-rise rounded-2xl border border-gold-500/30 bg-navy-950/70 p-7 shadow-2xl backdrop-blur-md [animation-delay:150ms]">
             <div className="flex justify-center">
               <div className="inline-block text-center">
-                <h2 className="font-serif text-2xl text-white">Current Target Rates</h2>
+                <h2 className="font-serif text-2xl text-white">Current Fixed Rates</h2>
                 <div className="gold-divider mt-3 w-full" />
               </div>            </div>
             <ul className="mt-5 divide-y divide-white/10">
@@ -143,7 +143,7 @@ export default function Home() {
               Start Investing
             </GoldButton>
             <p className="mt-4 text-[11px] leading-relaxed text-white/50">
-              *Target returns are fixed and guaranteed. Read the PDS and TMD.
+              *Returns are fixed and guaranteed. Read the PDS and TMD.
             </p>
           </div>
         </div>
@@ -187,7 +187,7 @@ export default function Home() {
             </p>
             <p className="mt-4 text-slate-600">
               We believe investing should be simple to understand. Every product we offer comes with a clear timeframe,
-              a published target return, plain documents and a secure online portal so you always know how your money
+              a published fixed return, plain documents and a secure online portal so you always know how your money
               is performing.
             </p>
             <div className="mt-8">
@@ -232,11 +232,11 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
           <SectionHeading
             title="Featured Investment Opportunities"
-            subtitle="Choose a fixed term that suits your goals. Rates are shown up front with the risks right beside them."
+            subtitle="Choose a fixed term that suits your goals. Your rate is locked in from day one with zero risk and guaranteed delivery."
           />
           <div className="grid gap-6 md:grid-cols-3">
             {products.map((p) => (
-              <ProductCard key={p.slug} product={p} />
+              <ProductCard key={p.slug} product={p} returnLabel="FIXED RETURN" />
             ))}
           </div>
           <RiskNote className="mx-auto mt-8 max-w-3xl" />
@@ -295,8 +295,8 @@ export default function Home() {
         <div className="mx-auto max-w-5xl px-5 lg:px-8">
           <SectionHeading
             light
-            title={<>See What Your Money <span className="text-gold-gradient">Could</span> Earn</>}
-            subtitle="Use our calculator to estimate an indicative return at today's target rates."
+            title={<>See What Your Money <span className="text-gold-gradient">Will</span> Earn</>}
+            subtitle="Calculate your projected payout at today's fixed rates."
           />
           <Calculator />
         </div>
