@@ -118,13 +118,13 @@ export const testimonials: Testimonial[] = [
     initials: "MT",
   },
   {
-    quote: "Easy process and fantastic support team. Verification took minutes, and having a local team on the phone made all the difference.",
+    quote: "Easy process and fantastic support team. Verification took minutes, and having real people on the phone made all the difference.",
     name: "David Wilson",
     state: "WA",
     initials: "DW",
   },
   {
-    quote: "Professional service and plain English documents. I always know when my term matures.",
+    quote: "Professional service and transparent. I always know when my term matures.",
     name: "Sarah Mitchell",
     state: "VIC",
     initials: "SM",
@@ -142,19 +142,19 @@ export const testimonials: Testimonial[] = [
     initials: "KO",
   },
   {
-    quote: "Managing surplus entity capital requires rigorous governance. The independent custody framework combined with locked-in fixed returns provides the security our directors demand.",
+    quote: "We needed a reliable home for our company's surplus cash. Knowing the funds sit with an independent custodian while earning a locked-in rate gave our board complete confidence.",
     name: "Andrew Chen",
     state: "ACT",
     initials: "AC",
   },
   {
-    quote: "Stepping away from equity market volatility to lock in fixed returns for 24 months has brought complete certainty and peace of mind to our family portfolio.",
+    quote: "After years of watching the share market bounce up and down, locking in a fixed rate for 24 months has been a huge relief for our family.",
     name: "Eleanor Hughes",
     state: "VIC",
     initials: "EH",
   },
   {
-    quote: "Now in my second 12-month term. The maturity rollover was completely seamless, and receiving prompt monthly disbursements without fail confirms I made the right decision.",
+    quote: "Now in my second 12-month term. Rolling over at maturity was effortless, and seeing my monthly payouts hit my account like clockwork tells me I made the right call.",
     name: "Harrison Blake",
     state: "QLD",
     initials: "HB",
