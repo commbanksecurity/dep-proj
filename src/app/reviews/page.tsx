@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { BadgeCheck, ExternalLink, MessageCircleHeart, PenLine, SearchCheck, ShieldCheck } from "lucide-react";
+import { BadgeCheck, MessageCircleHeart, PenLine, SearchCheck, ShieldCheck } from "lucide-react";
 import { ReviewForm } from "@/components/ReviewForm";
 import {
   CtaBanner,
@@ -17,18 +17,11 @@ import { testimonials } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Reviews & Testimonials",
-  description: "Read verified client experiences, independent reviews and case studies from Golden Treasure Capital investors.",
+  description: "Read client experiences and case studies from Golden Treasure Capital investors.",
 };
 
-// Replace "#" with your real business profile URLs once they are set up.
-const reviewSites = [
-  { name: "Google Reviews", text: "Read and leave reviews on our Google Business Profile.", href: "#" },
-  { name: "Trustpilot", text: "Independent reviews from verified investors.", href: "#" },
-  { name: "ProductReview.com.au", text: "Australia's consumer review platform.", href: "#" },
-];
-
 const process = [
-  { icon: PenLine, title: "You submit", text: "Share your experience using the form below or on an independent review site." },
+  { icon: PenLine, title: "You submit", text: "Share your experience using the form below." },
   { icon: SearchCheck, title: "We verify", text: "We confirm you are a genuine client. We never edit the content of a review." },
   { icon: BadgeCheck, title: "We publish", text: "Positive or negative, verified reviews are published with your first name and state." },
   { icon: MessageCircleHeart, title: "We respond", text: "Our team reads every review and follows up on any concerns personally." },
@@ -59,25 +52,6 @@ export default function ReviewsPage() {
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {testimonials.map((t) => (
               <TestimonialCard key={t.name} t={t} />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* INDEPENDENT REVIEWS */}
-      <section className="bg-white py-24">
-        <div className="mx-auto max-w-6xl px-5 lg:px-8">
-          <SectionHeading title="Independent Reviews" subtitle="Don't just take our word for it. Read what investors say on independent platforms." />
-          <div className="grid gap-6 md:grid-cols-3">
-            {reviewSites.map((r) => (
-              <a key={r.name} href={r.href} className="group rounded-2xl border border-slate-200 p-7 transition hover:border-gold-400 hover:shadow-lg">
-                <div className="flex items-center justify-between">
-                  <h3 className="font-serif text-xl text-navy-900">{r.name}</h3>
-                  <ExternalLink className="h-5 w-5 text-slate-400 group-hover:text-gold-600" />
-                </div>
-                <p className="mt-3 text-sm text-slate-600">{r.text}</p>
-                <p className="mt-5 text-sm font-semibold text-gold-700">Visit profile →</p>
-              </a>
             ))}
           </div>
         </div>

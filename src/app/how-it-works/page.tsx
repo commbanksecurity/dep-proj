@@ -110,7 +110,7 @@ export default function HowItWorksPage() {
               <FileCheck2 className="h-5 w-5 shrink-0 text-gold-700" />
               <p>
                 Please read the <Link href="/legal/documents" className="font-semibold underline">PDS and TMD</Link> before you apply. They explain the
-                product, its fees and risks, and who it is designed for.
+                product, its fixed terms and fees, and who it is designed for.
               </p>
             </div>
           </div>
@@ -125,7 +125,7 @@ export default function HowItWorksPage() {
             <h2 className="font-serif text-3xl text-white sm:text-4xl">Transparent. Straightforward. Secure.</h2>
             <div className="gold-divider mt-4 w-24" />
             <p className="mt-6 text-white/75">
-              Once you&apos;re invested, the investor portal puts everything at your fingertips, on desktop, tablet or phone.
+              Once you&apos;re invested, everything you need is at your fingertips either on desktop, tablet or phone.
             </p>
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
               {[
@@ -165,7 +165,7 @@ export default function HowItWorksPage() {
             ))}
           </div>
           <p className="mx-auto mt-10 max-w-3xl rounded-xl bg-navy-900 px-6 py-4 text-center text-sm text-white/85">
-            <strong className="text-gold-400">Scam warning:</strong> we will never cold call you offering investments, or ask you to pay into a
+            <strong className="text-gold-400">Scam warning:</strong> We will never cold call you offering investments, or ask you to pay into a
             personal account, by card, cryptocurrency or gift cards.
           </p>
         </div>

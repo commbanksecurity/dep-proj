@@ -141,6 +141,24 @@ export const testimonials: Testimonial[] = [
     state: "TAS",
     initials: "KO",
   },
+  {
+    quote: "Managing surplus entity capital requires rigorous governance. The independent custody framework combined with locked-in fixed returns provides the security our directors demand.",
+    name: "Andrew Chen",
+    state: "ACT",
+    initials: "AC",
+  },
+  {
+    quote: "Stepping away from equity market volatility to lock in fixed returns for 24 months has brought complete certainty and peace of mind to our family portfolio.",
+    name: "Eleanor Hughes",
+    state: "VIC",
+    initials: "EH",
+  },
+  {
+    quote: "Now in my second 12-month term. The maturity rollover was completely seamless, and receiving prompt monthly disbursements without fail confirms I made the right decision.",
+    name: "Harrison Blake",
+    state: "QLD",
+    initials: "HB",
+  },
 ];
 
 export const steps = [

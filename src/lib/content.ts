@@ -89,11 +89,11 @@ export const journey = [
       "Annual tax statements are issued each July for your tax return",
       "We'll remind you 30 days before your term matures",
     ],
-    time: "Throughout your term",
+    time: "During your term",
   },
   {
     n: "06",
-    title: "Mature, withdraw or reinvest",
+    title: "Withdraw or reinvest",
     lead: "At maturity, you decide what happens next.",
     points: [
       "Withdraw your capital and any final return to your nominated account",
@@ -110,7 +110,7 @@ export const needToApply = [
   "Driver licence, passport or Medicare card",
   "Australian bank account in your (or your entity's) name",
   "Tax File Number (optional, avoids withholding tax)",
-  "ABN and trust deed details for companies, trusts and SMSFs",
+  "ABN/ACN and trust deed details (where applicable) for companies, trusts and SMSFs",
   "A valid email address and Australian mobile number",
 ];
 

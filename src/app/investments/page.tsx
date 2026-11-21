@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import type { ReactNode } from "react";
 import {
-  AlertTriangle,
   Building2,
   CalendarCheck2,
+  CheckCircle2,
   Download,
   FileText,
   Landmark,
@@ -44,7 +44,7 @@ const sections = [
   { id: "compare", label: "Compare terms" },
   { id: "returns", label: "Return structures" },
   { id: "eligibility", label: "Eligibility" },
-  { id: "risks", label: "Risks" },
+  { id: "safeguards", label: "Safeguards" },
   { id: "documents", label: "Documents" },
   { id: "calculator", label: "Calculator" },
   { id: "faqs", label: "FAQs" },
@@ -52,19 +52,19 @@ const sections = [
 
 const investorTypes = [
   { icon: UserRound, title: "Individuals", text: "Australian residents aged 18 and over." },
-  { icon: UsersRound, title: "Joint investors", text: "Couples, family members or business partners." },
+  { icon: UsersRound, title: "Joint Investors", text: "Couples, family members or business partners." },
   { icon: Building2, title: "Companies", text: "Australian registered proprietary companies." },
   { icon: Landmark, title: "Trusts", text: "Family, unit and discretionary trusts." },
   { icon: PiggyBank, title: "SMSFs", text: "Self managed super funds, individual or corporate trustee." },
 ];
 
 const risks = [
-  { title: "Not a bank deposit", text: "Not covered by the Australian Government's Financial Claims Scheme." },
-  { title: "Returns can vary", text: "Target rates are variable and depend on the fund's actual earnings." },
-  { title: "Capital risk", text: "You could lose some or all of the money you invest." },
-  { title: "Liquidity risk", text: "Withdrawals, including at maturity, may be delayed in some circumstances." },
-  { title: "Credit risk", text: "Borrowers or counterparties of the fund could fail to repay." },
-  { title: "Interest rate risk", text: "Changes in market rates can affect what the fund earns and pays." },
+  { title: "Independent custody", text: "Client funds are held separately by an independent custodian, completely apart from our operating accounts." },
+  { title: "Locked in fixed rates", text: "Your rate is set from day one and remains fixed for your entire investment term, unaffected by monthly market shifts." },
+  { title: "Disciplined asset selection", text: "Capital is deployed into conservative, income producing Australian assets under strict credit and diversification limits." },
+  { title: "Defined maturity dates", text: "Choose a clear 6, 12 or 24 month timeframe with scheduled monthly payouts or a lump sum at maturity." },
+  { title: "Annual independent audits", text: "All fund accounts and compliance plans undergo rigorous annual auditing to maintain full accountability." },
+  { title: "Protected from rate drops", text: "Even if market interest rates fall during your term, your agreed rate stays locked in until maturity." },
 ];
 
 const documents = [
@@ -78,14 +78,14 @@ const documents = [
 
 type P = (typeof products)[number];
 const compareRows: [string, (p: P) => ReactNode][] = [
-  ["Target return (p.a.)*", (p) => <span className="font-semibold text-gold-700">{p.targetRate.toFixed(2)}%</span>],
+  ["Fixed return (p.a.)*", (p) => <span className="font-semibold text-gold-700">{p.targetRate.toFixed(2)}%</span>],
   ["Term", (p) => `${p.termMonths} months`],
   ["Minimum investment", (p) => formatAUD(p.minimum)],
   ["Return paid", (p) => (p.termMonths === 6 ? "At maturity" : "Monthly or at maturity")],
   ["Application fee", () => "Nil"],
   ["Fees at maturity", () => "Nil"],
   ["Reinvestment option", () => "Yes"],
-  ["Early access", () => "At RE discretion"],
+  ["Early access", () => "Yes, subject to approval"],
   ["Suitable for SMSFs", () => "Yes, subject to TMD"],
 ];
 
@@ -96,13 +96,13 @@ export default function InvestmentsPage() {
     <>
       <PageHero
         title="Investment Opportunities"
-        subtitle="Fixed term investments designed to deliver stable, competitive target returns."
+        subtitle="Fixed term investments designed to deliver stable, competitive returns."
         eyebrow="Investments"
         photo={photos.towers}
       >
         <p>
-          Choose from 6, 12 or 24 month terms, starting from {formatAUD(Math.min(...products.map((p) => p.minimum)))}. Every option shows its target
-          return, minimum, payment options and risks up front.
+          Choose from 6, 12 or 24 month terms, starting from {formatAUD(Math.min(...products.map((p) => p.minimum)))}. Every option shows its fixed
+          return, minimum investment and payout schedule up front.
         </p>
         <div className="mt-8 flex flex-wrap gap-4">
           <GoldButton href="#products">View Products</GoldButton>
@@ -180,7 +180,7 @@ export default function InvestmentsPage() {
               </tbody>
             </table>
           </div>
-          <p className="mt-3 text-xs text-slate-500">*Target rates as at {site.ratesAsAt}, net of fees, variable and reviewed monthly.</p>
+          <p className="mt-3 text-xs text-slate-500">*Fixed rates for 2026, net of fees, locked in for your entire investment term.</p>
         </div>
       </section>
 
@@ -192,8 +192,7 @@ export default function InvestmentsPage() {
             <h2 className="font-serif text-3xl text-navy-900 sm:text-4xl">Choose how you receive your returns</h2>
             <div className="gold-divider mt-4 w-24" />
             <p className="mt-6 text-slate-600">
-              The fund pays investors a variable rate that depends on what it actually earns. Rates are reviewed
-              monthly, and our management margin is already deducted from the rates shown.
+              Each investment term pays a fixed rate locked in from the day your funds are invested, with our management margin already deducted from the rates shown.
             </p>
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
               {[
@@ -245,7 +244,7 @@ export default function InvestmentsPage() {
                 items={[
                   "Are seeking regular income or a lump sum return over a fixed period",
                   "Can commit your money for the full term and don't need early access",
-                  "Understand that returns are variable and your capital is at risk",
+                  "Prefer a fixed rate rather than fluctuating market returns",
                   "Want an investment that forms part of a diversified portfolio",
                 ]}
               />
@@ -254,14 +253,16 @@ export default function InvestmentsPage() {
         </div>
       </section>
 
-      {/* RISKS */}
-      <section id="risks" className="scroll-mt-36 bg-white py-24">
+      {/* SAFEGUARDS */}
+      <section id="safeguards" className="scroll-mt-36 bg-white py-24">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
-          <SectionHeading title="Understanding the Risks" subtitle="All investments carry risk. Please read these carefully, along with the PDS, before investing." />
+          <SectionHeading title="How We Protect Your Investment" subtitle="Every term is backed by clear structural safeguards and locked in rates. Read the PDS and TMD for full details before investing." />
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {risks.map((r) => (
-              <div key={r.title} className="flex gap-4 rounded-xl border border-amber-200 bg-amber-50/60 p-6">
-                <AlertTriangle className="h-6 w-6 shrink-0 text-amber-600" />
+              <div key={r.title} className="flex gap-4 rounded-xl border border-gold-200/80 bg-white p-6 shadow-sm transition hover:border-gold-400 hover:shadow-md">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-gold-200/60 bg-gold-50 text-gold-600">
+                  <CheckCircle2 className="h-6 w-6" />
+                </div>
                 <div>
                   <h3 className="font-semibold text-navy-900">{r.title}</h3>
                   <p className="mt-1 text-sm text-slate-600">{r.text}</p>
