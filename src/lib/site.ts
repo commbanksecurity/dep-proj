@@ -105,6 +105,7 @@ export type Testimonial = { quote: string; name: string; state: string; initials
 // SAMPLE testimonials for design preview only. Australian Consumer Law prohibits fake
 // reviews – replace these with real, verified reviews before launch.
 export const testimonials: Testimonial[] = [
+  // Row 1 (Home top 3: Medium, Long, Short)
   {
     quote: "A reliable investment partner. My fixed rate payouts have arrived right on schedule, and it's easy to track everything online.",
     name: "James Carter",
@@ -112,16 +113,23 @@ export const testimonials: Testimonial[] = [
     initials: "JC",
   },
   {
-    quote: "Great communication from start to finish. The team walked me through the fixed rates and terms clearly before I invested.",
-    name: "Melissa Taylor",
-    state: "QLD",
-    initials: "MT",
+    quote: "After years of watching the share market bounce up and down, locking in a fixed rate for 24 months has been a huge relief for our family.",
+    name: "Eleanor Hughes",
+    state: "VIC",
+    initials: "EH",
   },
   {
-    quote: "Easy process and fantastic support team. Verification took minutes, and having real people on the phone made all the difference.",
-    name: "David Wilson",
-    state: "WA",
-    initials: "DW",
+    quote: "As an SMSF trustee I appreciate the clear reporting and tax statements every year.",
+    name: "Robert Nguyen",
+    state: "SA",
+    initials: "RN",
+  },
+  // Row 2 (Long, Short, Medium)
+  {
+    quote: "We needed a reliable home for our company's surplus cash. Knowing the funds sit with an independent custodian while earning a locked-in rate gave our board complete confidence.",
+    name: "Andrew Chen",
+    state: "ACT",
+    initials: "AC",
   },
   {
     quote: "Professional service and transparent. I always know when my term matures.",
@@ -130,11 +138,12 @@ export const testimonials: Testimonial[] = [
     initials: "SM",
   },
   {
-    quote: "As an SMSF trustee I appreciate the clear reporting and tax statements every year.",
-    name: "Robert Nguyen",
-    state: "SA",
-    initials: "RN",
+    quote: "Easy process and fantastic support team. Verification took minutes, and having real people on the phone made all the difference.",
+    name: "David Wilson",
+    state: "WA",
+    initials: "DW",
   },
+  // Row 3 (Short, Medium, Long)
   {
     quote: "Friendly people on the phone who actually answered my questions. Simple and transparent.",
     name: "Karen O'Brien",
@@ -142,16 +151,10 @@ export const testimonials: Testimonial[] = [
     initials: "KO",
   },
   {
-    quote: "We needed a reliable home for our company's surplus cash. Knowing the funds sit with an independent custodian while earning a locked-in rate gave our board complete confidence.",
-    name: "Andrew Chen",
-    state: "ACT",
-    initials: "AC",
-  },
-  {
-    quote: "After years of watching the share market bounce up and down, locking in a fixed rate for 24 months has been a huge relief for our family.",
-    name: "Eleanor Hughes",
-    state: "VIC",
-    initials: "EH",
+    quote: "Great communication from start to finish. The team walked me through the fixed rates and terms clearly before I invested.",
+    name: "Melissa Taylor",
+    state: "QLD",
+    initials: "MT",
   },
   {
     quote: "Now in my second 12-month term. Rolling over at maturity was effortless, and seeing my monthly payouts hit my account like clockwork tells me I made the right call.",
