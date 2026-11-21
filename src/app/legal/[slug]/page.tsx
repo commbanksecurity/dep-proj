@@ -10,7 +10,7 @@ const pages: Record<string, { title: string; subtitle: string; sections: { h: st
     title: "Risk Disclosure",
     subtitle: "Please read before investing",
     sections: [
-      { h: "Not a bank deposit", p: "Our fixed-term investments are units in a registered managed investment scheme. They are not bank deposits or term deposits, and are not covered by the Australian Government deposit guarantee (Financial Claims Scheme)." },
+      { h: "Not a bank deposit", p: "Our fixed term investments are units in a registered managed investment scheme. They are not bank deposits or term deposits, and are not covered by the Australian Government deposit guarantee (Financial Claims Scheme)." },
       { h: "Returns are not guaranteed", p: "Rates shown are target returns. They are variable, reviewed monthly and depend on the fund's actual earnings. Actual returns may be lower than the target rate, or nil." },
       { h: "Capital risk", p: "You could lose some or all of the money you invest." },
       { h: "Liquidity risk", p: "Investments are designed to be held to maturity. Withdrawals, including at maturity, may be delayed or suspended in some circumstances." },
@@ -33,7 +33,7 @@ const pages: Record<string, { title: string; subtitle: string; sections: { h: st
     sections: [
       { h: "What we collect", p: "We collect information needed to open and manage your account and verify your identity, such as your name, contact details, date of birth, identity documents and bank account details." },
       { h: "Why we collect it", p: "To provide our services, meet our obligations under the AML/CTF Act and tax laws, and communicate with you." },
-      { h: "Storage and security", p: "Your data is encrypted and stored with Australian-hosted providers. We follow the Australian Privacy Principles and notify you of eligible data breaches as required by law." },
+      { h: "Storage and security", p: "Your data is encrypted and stored with Australian hosted providers. We follow the Australian Privacy Principles and notify you of eligible data breaches as required by law." },
       { h: "Access and correction", p: `You can ask to access or correct your information by contacting ${site.email}.` },
     ],
   },

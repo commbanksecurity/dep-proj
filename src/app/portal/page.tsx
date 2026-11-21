@@ -10,7 +10,7 @@ const perks = [
   { icon: LineChart, t: "Track performance", d: "See your balance and returns at a glance." },
   { icon: FileText, t: "Statements & tax", d: "Download statements and annual tax summaries." },
   { icon: BellRing, t: "Maturity reminders", d: "Get notified before your term ends." },
-  { icon: ShieldCheck, t: "Secure access", d: "Two-factor login and encrypted connections." },
+  { icon: ShieldCheck, t: "Secure access", d: "Two factor login and encrypted connections." },
 ];
 
 export default function PortalPage() {

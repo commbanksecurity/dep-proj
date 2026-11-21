@@ -36,7 +36,7 @@ import { formatAUD, products, site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Investment Opportunities",
-  description: "Compare 6, 12 and 24-month fixed-term investment options: target returns, minimums, return structures, risks and documents.",
+  description: "Compare 6, 12 and 24 month fixed term investment options: target returns, minimums, return structures, risks and documents.",
 };
 
 const sections = [
@@ -53,9 +53,9 @@ const sections = [
 const investorTypes = [
   { icon: UserRound, title: "Individuals", text: "Australian residents aged 18 and over." },
   { icon: UsersRound, title: "Joint investors", text: "Couples, family members or business partners." },
-  { icon: Building2, title: "Companies", text: "Australian-registered proprietary companies." },
+  { icon: Building2, title: "Companies", text: "Australian registered proprietary companies." },
   { icon: Landmark, title: "Trusts", text: "Family, unit and discretionary trusts." },
-  { icon: PiggyBank, title: "SMSFs", text: "Self-managed super funds, individual or corporate trustee." },
+  { icon: PiggyBank, title: "SMSFs", text: "Self managed super funds, individual or corporate trustee." },
 ];
 
 const risks = [
@@ -70,7 +70,7 @@ const risks = [
 const documents = [
   { name: "Product Disclosure Statement (PDS)", meta: "PDF · Issued by the responsible entity" },
   { name: "Target Market Determination (TMD)", meta: "PDF · Who this product is designed for" },
-  { name: "Application Guide", meta: "PDF · Step-by-step help with applying" },
+  { name: "Application Guide", meta: "PDF · Step by step help with applying" },
   { name: "Fund Constitution Summary", meta: "PDF · Key terms of the scheme" },
   { name: "Monthly Rate Update", meta: `PDF · Target rates as at ${site.ratesAsAt}` },
   { name: "Financial Services Guide (FSG)", meta: "PDF · Our services and how we're paid" },
@@ -96,12 +96,12 @@ export default function InvestmentsPage() {
     <>
       <PageHero
         title="Investment Opportunities"
-        subtitle="Fixed-term investments designed to deliver stable, competitive target returns."
+        subtitle="Fixed term investments designed to deliver stable, competitive target returns."
         eyebrow="Investments"
         photo={photos.towers}
       >
         <p>
-          Choose from 6, 12 or 24-month terms, starting from {formatAUD(1000)}. Every option shows its target
+          Choose from 6, 12 or 24 month terms, starting from {formatAUD(Math.min(...products.map((p) => p.minimum)))}. Every option shows its target
           return, minimum, payment options and risks up front.
         </p>
         <div className="mt-8 flex flex-wrap gap-4">
@@ -120,7 +120,7 @@ export default function InvestmentsPage() {
           <StatBand
             stats={[
               ...products.map((p) => ({ value: `${p.targetRate.toFixed(2)}%`, label: `${p.name} target p.a.*` })),
-              { value: formatAUD(1000), label: "Minimum to start" },
+              { value: formatAUD(Math.min(...products.map((p) => p.minimum))), label: "Minimum to start" },
             ]}
           />
           <p className="mt-4 text-center text-xs text-white/50">
@@ -197,7 +197,7 @@ export default function InvestmentsPage() {
             </p>
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
               {[
-                { icon: Wallet, title: "Monthly returns", text: "Paid to your nominated account around the first business day of each month. Available on 12 and 24-month terms." },
+                { icon: Wallet, title: "Monthly returns", text: "Paid to your nominated account around the first business day of each month. Available on 12 and 24 month terms." },
                 { icon: CalendarCheck2, title: "At maturity", text: "Returns accrue and are paid together with your capital at the end of the term. Available on all terms." },
                 { icon: Repeat, title: "Reinvest", text: "Roll your capital (and returns) into a new term at maturity at the rate applying then." },
                 { icon: ShieldCheck, title: "Held in custody", text: "Fund assets are held by an independent custodian, separate from our own accounts." },
@@ -216,7 +216,7 @@ export default function InvestmentsPage() {
               <h3 className="font-serif text-xl text-gold-400">Where your money goes</h3>
               <p className="mt-3 text-sm text-white/75">
                 Investor funds are pooled in a registered managed investment scheme and invested in Australian
-                income-producing assets in line with the fund&apos;s investment policy, which sets limits on
+                income producing assets in line with the fund&apos;s investment policy, which sets limits on
                 asset type, credit quality and concentration.
               </p>
             </div>
@@ -243,7 +243,7 @@ export default function InvestmentsPage() {
               <CheckList
                 light
                 items={[
-                  "Are seeking regular income or a lump-sum return over a fixed period",
+                  "Are seeking regular income or a lump sum return over a fixed period",
                   "Can commit your money for the full term and don't need early access",
                   "Understand that returns are variable and your capital is at risk",
                   "Want an investment that forms part of a diversified portfolio",

@@ -31,7 +31,7 @@ export function LogoMark({ className = "h-12 w-12" }: { className?: string }) {
 
 export function Logo({ compact = false }: { compact?: boolean }) {
   return (
-    <Link href="/" className="flex items-center gap-3" aria-label="Golden Treasure Capital – home">
+    <Link href="/" className="flex items-center gap-3" aria-label="Golden Treasure Capital home">
       <LogoMark className={compact ? "h-10 w-10" : "h-12 w-12"} />
       <span className="h-10 w-px bg-gold-500/60" />
       <span className="whitespace-nowrap leading-tight">

@@ -9,11 +9,11 @@ const playfair = Playfair_Display({ variable: "--font-playfair", subsets: ["lati
 
 export const metadata: Metadata = {
   title: {
-    default: "Golden Treasure Capital | Fixed-Term Investments in Australia",
+    default: "Golden Treasure Capital | Fixed Term Investments in Australia",
     template: "%s | Golden Treasure Capital",
   },
   description:
-    "Fixed-term investment opportunities for Australians. 6, 12 and 24-month terms, online sign-up, secure investor portal. Returns are variable and not guaranteed.",
+    "Fixed term investment opportunities for Australians. 6, 12 and 24 month terms, online sign up, secure investor portal. Returns are variable and not guaranteed.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

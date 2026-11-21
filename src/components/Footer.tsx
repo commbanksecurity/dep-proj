@@ -11,7 +11,7 @@ export function Footer() {
         <div className="space-y-4">
           <Logo compact />
           <p className="text-sm leading-relaxed">
-            Fixed-term investment opportunities for Australians, built on transparency, plain-English disclosure and
+            Fixed term investment opportunities for Australians, built on transparency, plain English disclosure and
             secure technology.
           </p>
         </div>

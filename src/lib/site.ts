@@ -15,7 +15,7 @@ export const site = {
   phone: "1300 123 456",
   email: "info@goldentreasurecapital.com.au",
   address: "Level 12, 123 Collins Street, Melbourne VIC 3000",
-  hours: "Mon – Fri, 9:00am – 5:30pm AEST",
+  hours: "Mon to Fri, 9:00am to 5:30pm AEST",
   // PLACEHOLDER licensing details – fill in once the AFSL / authorised representative number is issued
   abn: "00 000 000 000",
   afsl: "AFSL [pending]",
@@ -75,7 +75,7 @@ export const products: Product[] = [
     icon: "chart",
     features: [
       "Minimum investment $25,000",
-      "Monthly or at-maturity returns",
+      "Monthly or at maturity returns",
       "Option to reinvest at maturity",
       "Track online 24/7",
     ],
@@ -90,7 +90,7 @@ export const products: Product[] = [
     icon: "diamond",
     features: [
       "Minimum investment $25,000",
-      "Monthly or at-maturity returns",
+      "Monthly or at maturity returns",
       "Option to reinvest at maturity",
       "Track online 24/7",
     ],
@@ -124,7 +124,7 @@ export const testimonials: Testimonial[] = [
     initials: "DW",
   },
   {
-    quote: "Professional service and plain-English documents. I always know when my term matures.",
+    quote: "Professional service and plain English documents. I always know when my term matures.",
     name: "Sarah Mitchell",
     state: "VIC",
     initials: "SM",
@@ -169,7 +169,7 @@ export const steps = [
 export const faqs = [
   {
     q: "Is this a term deposit?",
-    a: "No. Our fixed-term investments are units in a registered managed investment scheme. They are not bank deposits and are not covered by the Australian Government deposit guarantee (Financial Claims Scheme).",
+    a: "No. Our fixed term investments are units in a registered managed investment scheme. They are not bank deposits and are not covered by the Australian Government deposit guarantee (Financial Claims Scheme).",
   },
   {
     q: "Are returns guaranteed?",
@@ -177,7 +177,7 @@ export const faqs = [
   },
   {
     q: "What is the minimum I can invest?",
-    a: "$1,000 for the 6 and 12-month terms and $5,000 for the 24-month term.",
+    a: "$10,000 for the 6 month term and $25,000 for the 12 and 24 month terms.",
   },
   {
     q: "Can I withdraw early?",

@@ -91,13 +91,13 @@ export default function ReviewsPage() {
             <h2 className="font-serif text-3xl text-white sm:text-4xl">Service our investors talk about</h2>
             <div className="gold-divider mt-4 w-24" />
             <p className="mt-6 text-white/75">
-              Every enquiry is handled by our Melbourne-based client services team. We track how quickly we respond,
-              how often we resolve issues on first contact, and what investors tell us after each interaction — and
+              Every enquiry is handled by our Melbourne based client services team. We track how quickly we respond,
+              how often we resolve issues on first contact, and what investors tell us after each interaction, and
               we use that feedback to improve.
             </p>
             <div className="mt-8 space-y-4">
               {[
-                ["Clear explanations", "Investors consistently tell us they value plain-English answers about risks and returns."],
+                ["Clear explanations", "Investors consistently tell us they value plain English answers about risks and returns."],
                 ["Fast verification", "Most identity checks are completed electronically on the same day."],
                 ["Proactive reminders", "Maturity reminders 30 days ahead mean no surprises at the end of a term."],
               ].map(([t, d]) => (
@@ -118,7 +118,7 @@ export default function ReviewsPage() {
       {/* CASE STUDIES */}
       <section className="bg-white py-24">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
-          <SectionHeading title="Case Studies" subtitle="How different investors use fixed-term investments as part of their plans." />
+          <SectionHeading title="Case Studies" subtitle="How different investors use fixed term investments as part of their plans." />
           <PreviewNotice>
             These are illustrative scenarios, not real clients. They are general examples only and do not consider your personal circumstances.
           </PreviewNotice>

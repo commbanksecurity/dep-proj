@@ -15,7 +15,7 @@ import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "About Us",
-  description: "Golden Treasure Capital is a Melbourne-based investment manager helping Australians invest with clarity and confidence.",
+  description: "Golden Treasure Capital is a Melbourne based investment manager helping Australians invest with clarity and confidence.",
 };
 
 const valueIcons = [ShieldCheck, Eye, Scale, HeartHandshake, Handshake, TrendingUp];
@@ -43,12 +43,12 @@ export default function AboutPage() {
               they are investing in.
             </p>
             <p className="mt-4 text-slate-600">
-              Too many investment products hide behind jargon and fine print. We set out to do things differently —
-              offering a small range of fixed-term investments with clear terms, published target returns, plain-English
+              Too many investment products hide behind jargon and fine print. We set out to do things differently,
+              offering a small range of fixed term investments with clear terms, published target returns, plain English
               disclosure and technology that lets investors see their money at any time.
             </p>
             <p className="mt-4 text-slate-600">
-              Today we serve individuals, families, retirees, companies, trusts and self-managed super funds across
+              Today we serve individuals, families, retirees, companies, trusts and self managed super funds across
               Australia, with a team that is always a phone call away.
             </p>
           </div>
@@ -66,8 +66,8 @@ export default function AboutPage() {
       <section className="bg-navy-gradient py-24">
         <div className="mx-auto grid max-w-7xl gap-6 px-5 md:grid-cols-3 lg:px-8">
           {[
-            { icon: Target, title: "Our Mission", text: "To help Australians work towards their financial goals through secure, transparent and well-managed fixed-term investment opportunities." },
-            { icon: Compass, title: "Our Vision", text: "To be Australia's most trusted name in fixed-term investing — known for honesty, service and investments people genuinely understand." },
+            { icon: Target, title: "Our Mission", text: "To help Australians work towards their financial goals through secure, transparent and well managed fixed term investment opportunities." },
+            { icon: Compass, title: "Our Vision", text: "To be Australia's most trusted name in fixed term investing, known for honesty, service and investments people genuinely understand." },
             { icon: Gem, title: "Our Promise", text: "Rates, fees and risks shown together. Real people to talk to. Your money held independently and reported clearly." },
           ].map(({ icon: Icon, title, text }) => (
             <div key={title} className="gold-ring rounded-2xl bg-navy-900/70 p-8">
@@ -85,11 +85,11 @@ export default function AboutPage() {
           <Photo id={photos.coinPlant} alt="Coins with a growing seedling" sizes="(min-width:1024px) 50vw, 100vw" className="aspect-[4/3] rounded-2xl shadow-2xl" />
           <div>
             <Eyebrow>Investment philosophy</Eyebrow>
-            <h2 className="font-serif text-3xl text-navy-900 sm:text-4xl">Disciplined, conservative and income-focused</h2>
+            <h2 className="font-serif text-3xl text-navy-900 sm:text-4xl">Disciplined, conservative and income focused</h2>
             <div className="gold-divider mt-4 w-24" />
             <p className="mt-6 text-slate-600">
               Our Investment Committee meets monthly to review the fund&apos;s portfolio, earnings and target rates. We
-              favour Australian income-producing assets, apply strict credit and concentration limits, and keep
+              favour Australian income producing assets, apply strict credit and concentration limits, and keep
               sufficient liquidity to meet scheduled maturities.
             </p>
             <div className="mt-8">
@@ -167,14 +167,14 @@ export default function AboutPage() {
       {/* REGISTRATION DETAILS */}
       <section className="bg-mist py-24">
         <div className="mx-auto max-w-4xl px-5 lg:px-8">
-          <SectionHeading title="Company Registration Details" subtitle="Who we are, legally — so you always know who you're dealing with." />
+          <SectionHeading title="Company Registration Details" subtitle="Who we are, legally, so you always know who you're dealing with." />
           <dl className="divide-y divide-slate-200 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
             {[
               ["Trading name", site.name],
               ["ABN", site.abn],
               ["Australian Financial Services Licence", site.afsl],
               ["Responsible entity of the fund", site.responsibleEntity],
-              ["External dispute resolution", "Australian Financial Complaints Authority (AFCA) — membership details to be confirmed"],
+              ["External dispute resolution", "Australian Financial Complaints Authority (AFCA). Membership details to be confirmed"],
               ["Registered office", site.address],
               ["Phone", site.phone],
               ["Email", site.email],

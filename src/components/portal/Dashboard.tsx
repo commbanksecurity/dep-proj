@@ -19,20 +19,20 @@ import { clearDemoUser, loadDemoUser, type DemoUser } from "./demo";
 
 // Sample data for the portal preview.
 const holdings = [
-  { id: "GTC-12-0042", product: "12-Month Term", amount: 25000, rate: 6.25, start: "1 Mar 2026", maturity: "1 Mar 2027", status: "Active" },
-  { id: "GTC-24-0017", product: "24-Month Term", amount: 50000, rate: 7.0, start: "15 Jun 2026", maturity: "15 Jun 2028", status: "Active" },
-  { id: "GTC-06-0101", product: "6-Month Term", amount: 10000, rate: 5.25, start: "1 Oct 2026", maturity: "1 Apr 2027", status: "Pending funds" },
+  { id: "GTC 12 0042", product: "12 Month Term", amount: 25000, rate: 10.85, start: "1 Mar 2026", maturity: "1 Mar 2027", status: "Active" },
+  { id: "GTC 24 0017", product: "24 Month Term", amount: 50000, rate: 12.25, start: "15 Jun 2026", maturity: "15 Jun 2028", status: "Active" },
+  { id: "GTC 06 0101", product: "6 Month Term", amount: 10000, rate: 7.35, start: "1 Oct 2026", maturity: "1 Apr 2027", status: "Pending funds" },
 ];
 
 const transactions = [
-  { date: "1 Nov 2026", desc: "Monthly return – GTC-24-0017", amount: 291.67 },
-  { date: "1 Nov 2026", desc: "Monthly return – GTC-12-0042", amount: 130.21 },
-  { date: "1 Oct 2026", desc: "Monthly return – GTC-24-0017", amount: 291.67 },
-  { date: "1 Oct 2026", desc: "Monthly return – GTC-12-0042", amount: 130.21 },
-  { date: "15 Jun 2026", desc: "Investment funded – GTC-24-0017", amount: 50000 },
+  { date: "1 Nov 2026", desc: "Monthly return · GTC 24 0017", amount: 510.42 },
+  { date: "1 Nov 2026", desc: "Monthly return · GTC 12 0042", amount: 226.04 },
+  { date: "1 Oct 2026", desc: "Monthly return · GTC 24 0017", amount: 510.42 },
+  { date: "1 Oct 2026", desc: "Monthly return · GTC 12 0042", amount: 226.04 },
+  { date: "15 Jun 2026", desc: "Investment funded · GTC 24 0017", amount: 50000 },
 ];
 
-const docs = ["Statement – October 2026", "Statement – September 2026", "Annual Tax Statement FY2026", "Product Disclosure Statement"];
+const docs = ["Statement · October 2026", "Statement · September 2026", "Annual Tax Statement FY2026", "Product Disclosure Statement"];
 
 export function Dashboard() {
   const router = useRouter();
@@ -45,7 +45,7 @@ export function Dashboard() {
   }, []);
 
   const invested = holdings.filter((h) => h.status === "Active").reduce((s, h) => s + h.amount, 0);
-  const earned = 2843.75;
+  const earned = 4586.46;
   const firstName = user?.name.split(" ")[0] ?? "";
 
   return (

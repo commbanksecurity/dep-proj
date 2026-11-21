@@ -7,13 +7,13 @@ import { faqCategories, journey, needToApply, photos } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "How It Works",
-  description: "Register, verify, apply, fund, earn and mature. A simple, secure six-step process to start investing.",
+  description: "Register, verify, apply, fund, earn and mature. A simple, secure six step process to start investing.",
 };
 
 const security = [
-  { icon: Fingerprint, title: "Two-factor authentication", text: "Every login and sensitive change is confirmed with a one-time code." },
+  { icon: Fingerprint, title: "Two factor authentication", text: "Every login and sensitive change is confirmed with a one time code." },
   { icon: LockKeyhole, title: "Encryption", text: "Your data is encrypted in transit and at rest." },
-  { icon: ServerCog, title: "Australian hosting", text: "Personal information is stored with Australian-hosted providers." },
+  { icon: ServerCog, title: "Australian hosting", text: "Personal information is stored with Australian hosted providers." },
   { icon: UserCheck, title: "Verified payments only", text: "Returns are paid only to accounts in your own (or your entity's) name." },
 ];
 
@@ -27,7 +27,7 @@ export default function HowItWorksPage() {
         subtitle="A simple and secure process to start growing your wealth."
         photo={photos.laptopPhone}
       >
-        <p>From registration to maturity, here&apos;s exactly what to expect at every step — and how long each one takes.</p>
+        <p>From registration to maturity, here&apos;s exactly what to expect at every step, and how long each one takes.</p>
         <div className="mt-8">
           <GoldButton href="/portal?tab=create">Create Your Account</GoldButton>
         </div>
@@ -46,7 +46,7 @@ export default function HowItWorksPage() {
       {/* OVERVIEW STRIP */}
       <section className="bg-white py-20">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
-          <SectionHeading title="Your Investment Journey" subtitle="Six clear stages. Most investors are set up within one to two business days." />
+          <SectionHeading title="Your Investment Journey" subtitle="Six clear stages. Most investors are set up within one business day." />
           <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
             {journey.map((s) => (
               <a key={s.n} href={`#step-${s.n}`} className="group rounded-xl border border-slate-200 p-5 text-center transition hover:border-gold-400 hover:shadow-md">
@@ -125,7 +125,7 @@ export default function HowItWorksPage() {
             <h2 className="font-serif text-3xl text-white sm:text-4xl">Transparent. Straightforward. Secure.</h2>
             <div className="gold-divider mt-4 w-24" />
             <p className="mt-6 text-white/75">
-              Once you&apos;re invested, the investor portal puts everything at your fingertips — on desktop, tablet or phone.
+              Once you&apos;re invested, the investor portal puts everything at your fingertips, on desktop, tablet or phone.
             </p>
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
               {[
@@ -165,7 +165,7 @@ export default function HowItWorksPage() {
             ))}
           </div>
           <p className="mx-auto mt-10 max-w-3xl rounded-xl bg-navy-900 px-6 py-4 text-center text-sm text-white/85">
-            <strong className="text-gold-400">Scam warning:</strong> we will never cold-call you offering investments, or ask you to pay into a
+            <strong className="text-gold-400">Scam warning:</strong> we will never cold call you offering investments, or ask you to pay into a
             personal account, by card, cryptocurrency or gift cards.
           </p>
         </div>

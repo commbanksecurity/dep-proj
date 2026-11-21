@@ -19,9 +19,9 @@ const items = [
 ];
 
 const consultations = [
-  { icon: Phone, title: "Phone call", text: "A 20-minute call to talk through our products and answer your questions." },
+  { icon: Phone, title: "Phone call", text: "A 20 minute call to talk through our products and answer your questions." },
   { icon: Video, title: "Video meeting", text: "Meet our team online from anywhere in Australia, at a time that suits you." },
-  { icon: Users, title: "In person", text: "Visit our Collins Street office in Melbourne for a face-to-face consultation." },
+  { icon: Users, title: "In person", text: "Visit our Collins Street office in Melbourne for a face to face consultation." },
 ];
 
 const support = [
@@ -38,7 +38,7 @@ export default function ContactPage() {
         subtitle="Get in touch with our team for any enquiries."
         photo={photos.melbourne}
       >
-        <p>Our Australian-based team responds to every enquiry within one business day.</p>
+        <p>Our Australian based team responds to every enquiry within one business day.</p>
       </PageHero>
 
       {/* CONTACT CARDS */}
@@ -96,7 +96,7 @@ export default function ContactPage() {
       {/* CONSULTATIONS */}
       <section className="bg-navy-gradient py-24">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
-          <SectionHeading light title="Book a Consultation" subtitle="Prefer to talk it through? Choose the way that works best for you — there's no cost or obligation." />
+          <SectionHeading light title="Book a Consultation" subtitle="Prefer to talk it through? Choose the way that works best for you. There's no cost or obligation." />
           <div className="grid gap-6 md:grid-cols-3">
             {consultations.map(({ icon: Icon, title, text }) => (
               <div key={title} className="gold-ring rounded-2xl bg-navy-900/70 p-8 text-center">

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 const topics = [
   { icon: ChartLine, title: "Australian market insights", text: "Interest rates, the economy and what they mean for income investors." },
-  { icon: GraduationCap, title: "Investment education", text: "Plain-English guides to help you invest with confidence." },
+  { icon: GraduationCap, title: "Investment education", text: "Plain English guides to help you invest with confidence." },
   { icon: BookOpen, title: "Financial articles", text: "Ideas for retirees, SMSF trustees and savers." },
   { icon: Megaphone, title: "Company announcements", text: "Rate updates, new features and news from our team." },
 ];

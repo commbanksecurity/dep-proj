@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { formatAUD, products } from "@/lib/site";
 
-const MAX = 500000;
+const MAX = 5000000;
 const STEP = 5000;
 
 export function Calculator() {

@@ -1,5 +1,5 @@
 // Front-end demo session only. Replace with a real auth provider + backend before launch
-// (two-factor login, KYC provider, Australian-hosted database – see business plan section 6).
+// (two factor login, KYC provider, Australian hosted database – see business plan section 6).
 export type DemoUser = { name: string; email: string };
 
 const KEY = "gtc-demo-user";
