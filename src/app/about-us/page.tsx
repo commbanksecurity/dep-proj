@@ -142,7 +142,7 @@ export default function AboutPage() {
                       style={{
                         height: m.photoOffset,
                         backgroundImage: `url(${m.photo})`,
-                        backgroundSize: `100% ${m.photoOffset * 100}px`,
+                        backgroundSize: `100% ${(m.photoOffset as number) * 100}px`,
                       }}
                     />
                   )}
