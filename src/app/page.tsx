@@ -187,8 +187,7 @@ export default function Home() {
             </p>
             <p className="mt-4 text-slate-600">
               We believe investing should be simple to understand. Every product we offer comes with a clear timeframe,
-              a published fixed return, plain documents and a secure online portal so you always know how your money
-              is performing.
+              a published fixed return and a secure online portal so you always know how your money is performing.
             </p>
             <div className="mt-8">
               <CheckList
