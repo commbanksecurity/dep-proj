@@ -36,7 +36,6 @@ export function Footer() {
         <div>
           <h3 className="mb-4 font-serif text-lg text-gold-400">Important Information</h3>
           <ul className="space-y-2 text-sm">
-            <li><Link href="/legal/risk" className="hover:text-gold-300">Risk Disclosure</Link></li>
             <li><Link href="/legal/documents" className="hover:text-gold-300">PDS &amp; TMD</Link></li>
             <li><Link href="/legal/privacy" className="hover:text-gold-300">Privacy Policy</Link></li>
             <li><Link href="/legal/terms" className="hover:text-gold-300">Terms &amp; Conditions</Link></li>
@@ -64,11 +63,11 @@ export function Footer() {
           </p>
           <p>
             Investments offered by {site.name} are not bank deposits and are not covered by the Australian Government
-            deposit guarantee. Returns are variable and not guaranteed. Investors may lose some or all of their capital
-            and withdrawals may be delayed. Past performance is not a reliable indicator of future performance.
+            deposit guarantee. Rates are fixed for the selected term subject to the PDS, and past performance is not a
+            reliable indicator of future performance.
           </p>
           <p>
-            Issued by {site.responsibleEntity} ABN {site.abn}, {site.afsl}. © 2026 {site.name}. All rights reserved.
+            Issued by {site.responsibleEntity}, ABN {site.abn}, {site.afsl}. © 2026 {site.name}. All rights reserved.
           </p>
         </div>
       </div>

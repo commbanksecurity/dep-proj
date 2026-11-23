@@ -9,7 +9,6 @@ import {
   CircleCheck,
   ChartNoAxesCombined,
   Gem,
-  Info,
   Mail,
   ShieldCheck,
   Star,
@@ -193,7 +192,7 @@ export function ArticleCard({ a }: { a: Article }) {
         <h3 className="mt-2 font-serif text-xl leading-snug text-navy-900 group-hover:text-gold-700">{a.title}</h3>
         <p className="mt-3 flex-1 text-sm text-slate-600">{a.excerpt}</p>
         <p className="mt-5 flex items-center justify-between text-xs text-slate-500">
-          <span>{a.date} · {a.readMins} min read</span>
+          <span>{a.date}</span>
           <ArrowRight className="h-4 w-4 text-gold-600 transition group-hover:translate-x-1" />
         </p>
       </div>
@@ -204,7 +203,7 @@ export function ArticleCard({ a }: { a: Article }) {
 export function RiskNote({ className = "" }: { className?: string }) {
   return (
     <p className={`flex gap-2 text-xs leading-relaxed text-slate-500 ${className}`}>
-      <Info className="mt-0.5 h-4 w-4 shrink-0 text-gold-600" />
+      <CircleCheck className="mt-0.5 h-4 w-4 shrink-0 text-gold-500" />
       <span>{riskWarningShort}</span>
     </p>
   );
@@ -307,7 +306,7 @@ export function CtaBanner() {
       <div className="relative mx-auto flex max-w-7xl flex-col items-center gap-6 px-5 py-14 text-center md:flex-row md:text-left lg:px-8">
         <Mail className="h-14 w-14 shrink-0 text-gold-400" strokeWidth={1.25} />
         <div className="flex-1">
-          <h2 className="font-serif text-3xl text-gold-400">Ready to Start?</h2>
+          <h2 className="font-serif text-3xl text-gold-400">Ready To Start?</h2>
           <p className="mt-1 text-white/85">
             Create your account today and take the first step towards your financial goals.
           </p>

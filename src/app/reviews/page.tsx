@@ -17,7 +17,7 @@ import { testimonials } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Reviews & Testimonials",
-  description: "Read client experiences and case studies from Golden Treasure Capital investors.",
+  description: "Read client experiences and case studies from Golden Age Capital investors.",
 };
 
 const process = [

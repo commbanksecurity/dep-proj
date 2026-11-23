@@ -8,7 +8,7 @@ import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Contact Us",
-  description: "Call, email or visit Golden Treasure Capital in Melbourne. Send an enquiry or book a consultation with our team.",
+  description: "Call, email or visit Golden Age Capital in Melbourne. Send an enquiry or book a consultation with our team.",
 };
 
 const items = [

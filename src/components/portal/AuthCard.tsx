@@ -72,7 +72,7 @@ export function AuthCard() {
           <form onSubmit={onCreate} className="space-y-4">
             <div className="text-center">
               <h2 className="font-serif text-2xl text-navy-900">Create Your Account</h2>
-              <p className="mt-1 text-sm text-slate-500">Join Golden Treasure Capital in just a few simple steps.</p>
+              <p className="mt-1 text-sm text-slate-500">Join Golden Age Capital in just a few simple steps.</p>
               {product && (
                 <p className="mt-3 rounded-md bg-gold-200/40 px-3 py-2 text-sm text-gold-700">
                   Selected: <strong>{product.name}</strong> at a target {product.targetRate.toFixed(2)}% p.a.

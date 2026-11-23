@@ -8,18 +8,17 @@
  */
 
 export const site = {
-  name: "Golden Treasure Capital",
-  shortName: "GTC",
+  name: "Golden Age Capital",
+  shortName: "GAC",
   tagline: "Secure. Transparent. Built for Long Term Growth.",
   // PLACEHOLDER contact details (taken from the design mockup)
   phone: "1300 123 456",
-  email: "info@goldentreasurecapital.com.au",
+  email: "info@goldenagecapital.com.au",
   address: "Level 12, 123 Collins Street, Melbourne VIC 3000",
   hours: "Mon to Fri, 9:00am to 5:30pm AEST",
-  // PLACEHOLDER licensing details – fill in once the AFSL / authorised representative number is issued
-  abn: "00 000 000 000",
-  afsl: "AFSL [pending]",
-  responsibleEntity: "[Responsible Entity name]",
+  abn: "72 607 858 131",
+  afsl: "AFSL 493772",
+  responsibleEntity: "Golden Age Capital Pty Ltd",
   // Set to false once real, verified reviews replace the sample testimonials.
   showSampleReviewNotice: false,
   ratesAsAt: "1 November 2026",

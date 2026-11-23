@@ -20,8 +20,8 @@ export function LogoMark({ className = "h-12 w-12" }: { className?: string }) {
       <g fill="none" stroke="url(#lg-gold)" strokeWidth="3.5" strokeLinecap="butt" strokeLinejoin="miter">
         {/* G */}
         <path d="M21.5 21 h-4 a5 5 0 0 0 -5 5 v12 a5 5 0 0 0 5 5 h4 v-9 h-4" />
-        {/* T */}
-        <path d="M25.5 21 h12 M31.5 21 v22" />
+        {/* A */}
+        <path d="M25 43 L31.5 21 L38 43 M27.4 35 h8.2" />
         {/* C */}
         <path d="M51.5 21 h-5 a5 5 0 0 0 -5 5 v12 a5 5 0 0 0 5 5 h5" />
       </g>
@@ -31,11 +31,11 @@ export function LogoMark({ className = "h-12 w-12" }: { className?: string }) {
 
 export function Logo({ compact = false }: { compact?: boolean }) {
   return (
-    <Link href="/" className="flex items-center gap-3" aria-label="Golden Treasure Capital home">
+    <Link href="/" className="flex items-center gap-3" aria-label="Golden Age Capital home">
       <LogoMark className={compact ? "h-10 w-10" : "h-12 w-12"} />
       <span className="h-10 w-px bg-gold-500/60" />
       <span className="whitespace-nowrap leading-tight">
-        <span className="block font-serif text-base tracking-wide text-white xl:text-xl">GOLDEN TREASURE</span>
+        <span className="block font-serif text-base tracking-wide text-white xl:text-xl">GOLDEN AGE</span>
         <span className="block text-center text-[11px] tracking-[0.5em] text-gold-400">CAPITAL</span>
       </span>
     </Link>

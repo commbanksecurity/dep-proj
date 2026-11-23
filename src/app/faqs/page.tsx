@@ -18,7 +18,7 @@ export default function FaqsPage() {
     <>
       <PageHero
         title="Everything you need to know"
-        subtitle="Answers to common questions about investing with Golden Treasure Capital."
+        subtitle="Answers to common questions about investing with Golden Age Capital."
         eyebrow="FAQs"
         photo={photos.calculatorDocs}
       />

@@ -40,7 +40,7 @@ const pillars = [
   { icon: ShieldCheck, title: "Secure & Compliant", text: "Independent custody, audited annually" },
   { icon: ChartNoAxesColumnIncreasing, title: "Competitive Returns", text: "Shown after fees, reviewed monthly" },
   { icon: Handshake, title: "Dedicated Support", text: "Australian team, every step of the way" },
-  { icon: Trophy, title: "Built for Australians", text: "Individuals, SMSFs, companies & trusts" },
+  { icon: Trophy, title: "Built For Australians", text: "Individuals, SMSFs, companies & trusts" },
 ];
 
 const philosophy = [
@@ -57,12 +57,12 @@ const philosophy = [
   {
     icon: Scale,
     title: "Complete Transparency",
-    text: "Rates, fees and risks are always shown side by side in a PDS you can actually read",
+    text: "Rates, fees and terms are always shown side by side in a clear PDS.",
   },
 ];
 
 const benefits = [
-  { icon: BadgeDollarSign, title: "Start from $10,000", text: "Accessible minimums so you can begin at a level that suits you." },
+  { icon: BadgeDollarSign, title: "Start from $10,000", text: "Accessible minimums so you can begin at any level that suits you." },
   { icon: CalendarClock, title: "Choice of terms", text: "6, 12 or 24 months, with monthly or at maturity payout options." },
   { icon: FileText, title: "No entry or exit fees", text: "Zero hidden charges. Fixed rates are shown net of fees." },
   { icon: MonitorSmartphone, title: "24/7 investor portal", text: "Track balances, returns and statements from any device." },
@@ -94,7 +94,7 @@ export default function Home() {
             <h1 className="font-serif text-4xl leading-tight text-white sm:text-5xl lg:text-6xl">
               Grow Your Wealth
               <br />
-              with <span className="text-gold-gradient">Golden Treasure Capital</span>
+              With <span className="text-gold-gradient">Golden Age Capital</span>
             </h1>
             <p className="mt-6 text-xl text-white/90">{site.tagline}</p>
             <p className="mt-4 max-w-xl text-lg text-white/75">
@@ -166,7 +166,7 @@ export default function Home() {
       <section className="bg-white py-24">
         <div className="mx-auto grid max-w-7xl items-center gap-14 px-5 lg:grid-cols-2 lg:px-8">
           <div className="relative">
-            <Photo id={photos.teamMeeting} alt="Golden Treasure Capital team meeting" sizes="(min-width:1024px) 50vw, 100vw" className="aspect-[4/3] rounded-2xl shadow-2xl" />
+            <Photo id={photos.teamMeeting} alt="Golden Age Capital team meeting" sizes="(min-width:1024px) 50vw, 100vw" className="aspect-[4/3] rounded-2xl shadow-2xl" />
             <div className="absolute -bottom-8 -right-4 hidden rounded-2xl border border-gold-500/30 bg-navy-900 px-7 py-6 shadow-2xl sm:block">
               <p className="font-serif text-4xl text-gold-gradient">3</p>
               <p className="text-sm text-white/80">Fixed Term Options</p>
@@ -175,14 +175,14 @@ export default function Home() {
           <div>
             <Eyebrow>Who we are</Eyebrow>
             <h2 className="font-serif text-3xl text-navy-900 sm:text-4xl">
-              Building a stronger financial future{" "}
+              Building A Stronger Financial Future{" "}
               <span className="inline-block">
-                for Australians
+                For Australians
                 <span className="gold-divider mt-4 block w-full" />
               </span>
             </h2>
             <p className="mt-6 text-lg text-slate-600">
-              Golden Treasure Capital is an Australian based investment manager offering fixed term investment
+              Golden Age Capital is an Australian based investment manager offering fixed term investment
               opportunities to individuals, retirees and self managed super funds.
             </p>
             <p className="mt-4 text-slate-600">
@@ -268,7 +268,7 @@ export default function Home() {
       {/* HOW IT WORKS STRIP */}
       <section className="relative overflow-hidden bg-navy-950 py-24">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
-          <SectionHeading light title="Start Investing in Four Simple Steps" subtitle="Most investors are set up within one business day." />
+          <SectionHeading light title="Start Investing In Four Simple Steps" subtitle="Most investors are set up within one business day." />
           <div className="grid gap-6 md:grid-cols-4">
             {steps.map((s, i) => (
               <div key={s.title} className="relative text-center">
@@ -343,7 +343,7 @@ export default function Home() {
       {/* EXPLORE */}
       <section className="border-t border-slate-200 bg-mist py-20">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
-          <SectionHeading title="Explore Golden Treasure Capital" />
+          <SectionHeading title="Explore Golden Age Capital" />
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {explore.map(({ href, icon: Icon, title, text }) => (
               <Link key={href} href={href} className="group flex items-center gap-4 rounded-xl border border-slate-200 bg-white p-5 transition hover:border-gold-400 hover:shadow-md">

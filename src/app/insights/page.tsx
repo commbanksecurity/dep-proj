@@ -24,7 +24,7 @@ export default function InsightsPage() {
     <>
       <PageHero
         title="News & Insights"
-        subtitle="Market commentary, investor education and the latest from Golden Treasure Capital."
+        subtitle="Market commentary, investor education and the latest from Golden Age Capital."
         eyebrow="Insights"
         photo={photos.chartsDesk}
       />
@@ -57,7 +57,7 @@ export default function InsightsPage() {
               <p className="mt-6 flex items-center gap-2 text-sm font-semibold text-gold-700">
                 Read article <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" />
               </p>
-              <p className="mt-4 text-xs text-slate-500">{featured.date} · {featured.readMins} min read</p>
+              <p className="mt-4 text-xs text-slate-500">{featured.date}</p>
             </div>
           </Link>
         </div>

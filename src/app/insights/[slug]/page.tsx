@@ -46,7 +46,7 @@ async function Content({ params }: { params: PageProps<"/insights/[slug]">["para
           </nav>
           <h1 className="font-serif text-4xl leading-tight text-white sm:text-5xl">{a.title}</h1>
           <p className="mt-5 text-lg text-white/80">{a.excerpt}</p>
-          <p className="mt-6 text-sm text-gold-300">{a.date} · {a.readMins} min read</p>
+          <p className="mt-6 text-sm text-gold-300">{a.date}</p>
         </div>
         <div className="gold-divider" />
       </section>

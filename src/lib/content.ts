@@ -126,7 +126,7 @@ export const values = [
 ];
 
 export const milestones = [
-  { year: "2024", text: "Golden Treasure Capital founded in Melbourne by a team with backgrounds in funds management and lending." },
+  { year: "2024", text: "Golden Age Capital founded in Melbourne by a team with backgrounds in funds management and lending." },
   { year: "2025", text: "Investment framework, custody arrangements and compliance programme established." },
   { year: "2026", text: "Investor portal launched with online sign up, electronic ID verification and 24/7 reporting." },
   { year: "Next", text: "Expanding our product range and investor education programme across Australia." },
@@ -239,7 +239,7 @@ export const faqCategories: FaqCategory[] = [
     id: "security",
     title: "Security and privacy",
     items: [
-      { q: "How is my money held?", a: "Fund assets are held by an independent custodian, separate from Golden Treasure Capital's own business accounts. The fund's accounts and compliance plan are audited annually." },
+      { q: "How is my money held?", a: "Fund assets are held by an independent custodian, separate from Golden Age Capital's own business accounts. The fund's accounts and compliance plan are audited annually." },
       { q: "How do you protect my personal information?", a: "Data is encrypted in transit and at rest, stored with Australian hosted providers and handled in line with the Australian Privacy Principles. See our Privacy Policy for details." },
       { q: "How do I spot a scam using your name?", a: "We will never cold call offering investments, ask you to pay into a personal account, or request cryptocurrency or gift cards. If in doubt, hang up and call us on the number on this website." },
       { q: "What if I have a complaint?", a: "Contact us first and we'll aim to resolve it within 30 days. If you're not satisfied, you can contact the Australian Financial Complaints Authority (AFCA) free of charge." },
@@ -254,7 +254,6 @@ export type Article = {
   title: string;
   category: "Market insights" | "Investor education" | "Articles" | "Announcements";
   date: string;
-  readMins: number;
   excerpt: string;
   photo: string;
   body: { h?: string; p: string }[];
@@ -266,7 +265,6 @@ export const articles: Article[] = [
     title: "Cash rate on hold: what it means for Australian income investors",
     category: "Market insights",
     date: "12 November 2026",
-    readMins: 5,
     excerpt: "With the cash rate steady, we look at how income investors are weighing term based options against at call savings.",
     photo: "1551288049-bebda4e38f71",
     body: [
@@ -281,7 +279,6 @@ export const articles: Article[] = [
     title: "Fixed term investment vs term deposit: understanding the difference",
     category: "Investor education",
     date: "28 October 2026",
-    readMins: 6,
     excerpt: "They sound similar, but the protections, risks and returns are different. Here's a plain English comparison.",
     photo: "1554224154-26032ffc0d07",
     body: [
@@ -296,7 +293,6 @@ export const articles: Article[] = [
     title: "Five income ideas SMSF trustees are discussing in 2026",
     category: "Articles",
     date: "15 October 2026",
-    readMins: 7,
     excerpt: "From laddering maturities to reviewing cash buffers, here's what's on the agenda for self managed super funds.",
     photo: "1554224155-6726b3ff858f",
     body: [
@@ -313,11 +309,10 @@ export const articles: Article[] = [
     title: "Our new investor portal is live",
     category: "Announcements",
     date: "1 October 2026",
-    readMins: 3,
     excerpt: "Open an account, verify your identity and track every investment online, all in one secure place.",
     photo: "1460925895917-afdab827c52f",
     body: [
-      { p: "We're pleased to announce the launch of the Golden Treasure Capital investor portal, giving investors 24/7 access to their accounts." },
+      { p: "We're pleased to announce the launch of the Golden Age Capital investor portal, giving investors 24/7 access to their accounts." },
       { h: "What you can do", p: "Register and apply online, complete electronic identity verification, view balances and returns, download statements and update your maturity instructions." },
       { h: "Built for security", p: "The portal uses two factor authentication, encryption in transit and at rest, and Australian hosted infrastructure." },
     ],
@@ -327,7 +322,6 @@ export const articles: Article[] = [
     title: "How to read a Product Disclosure Statement in 15 minutes",
     category: "Investor education",
     date: "18 September 2026",
-    readMins: 6,
     excerpt: "A PDS can be long. These are the sections that matter most, and the questions to ask as you read.",
     photo: "1450101499163-c8848c66ca85",
     body: [
@@ -342,11 +336,10 @@ export const articles: Article[] = [
     title: "Welcome to our Collins Street office",
     category: "Announcements",
     date: "2 September 2026",
-    readMins: 2,
     excerpt: "Our team has moved into a new home in Melbourne's CBD, with meeting rooms for investor consultations.",
     photo: "1514395462725-fb4566210144",
     body: [
-      { p: "Golden Treasure Capital has moved into new offices on Collins Street, Melbourne. Investors are welcome to book a face to face consultation with our client services team." },
+      { p: "Golden Age Capital has moved into new offices on Collins Street, Melbourne. Investors are welcome to book a face to face consultation with our client services team." },
       { h: "Book a meeting", p: "Use the contact form on our website or call us during business hours to arrange a time." },
     ],
   },

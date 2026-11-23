@@ -15,7 +15,7 @@ import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "About Us",
-  description: "Golden Treasure Capital is a Melbourne based investment manager helping Australians invest with clarity and confidence.",
+  description: "Golden Age Capital is a Melbourne based investment manager helping Australians invest with clarity and confidence.",
 };
 
 const valueIcons = [ShieldCheck, Eye, Scale, HeartHandshake, Handshake, TrendingUp];
@@ -24,7 +24,7 @@ export default function AboutPage() {
   return (
     <>
       <PageHero
-        title="About Golden Treasure Capital"
+        title="About Golden Age Capital"
         subtitle="Our mission is to help Australians grow their wealth through trusted, transparent investments."
         eyebrow="About Us"
         photo={photos.sydneyHarbour}
@@ -35,10 +35,10 @@ export default function AboutPage() {
         <div className="mx-auto grid max-w-7xl items-center gap-14 px-5 lg:grid-cols-2 lg:px-8">
           <div>
             <Eyebrow>Our story</Eyebrow>
-            <h2 className="font-serif text-3xl text-navy-900 sm:text-4xl">An Australian investment manager built on clarity</h2>
+            <h2 className="font-serif text-3xl text-navy-900 sm:text-4xl">An Australian Investment Manager Built on Clarity</h2>
             <div className="gold-divider mt-4 w-24" />
             <p className="mt-6 text-lg text-slate-600">
-              Golden Treasure Capital was founded in Melbourne by a team of professionals from funds management,
+              Golden Age Capital was founded in Melbourne by a team of professionals from funds management,
               lending and client services who shared a simple belief: investors deserve to understand exactly what
               they are investing in.
             </p>
@@ -53,7 +53,7 @@ export default function AboutPage() {
             </p>
           </div>
           <div className="relative">
-            <Photo id={photos.office} alt="Golden Treasure Capital office" sizes="(min-width:1024px) 50vw, 100vw" className="aspect-[4/3] rounded-2xl shadow-2xl" />
+            <Photo id={photos.office} alt="Golden Age Capital office" sizes="(min-width:1024px) 50vw, 100vw" className="aspect-[4/3] rounded-2xl shadow-2xl" />
             <div className="absolute -bottom-8 -left-4 hidden max-w-xs rounded-2xl border border-gold-500/30 bg-navy-900 p-6 shadow-2xl sm:block">
               <p className="font-serif text-lg text-gold-400">Melbourne headquartered</p>
               <p className="mt-1 text-sm text-white/75">{site.address}</p>
