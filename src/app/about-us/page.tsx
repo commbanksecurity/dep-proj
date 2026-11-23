@@ -44,8 +44,8 @@ export default function AboutPage() {
             </p>
             <p className="mt-4 text-slate-600">
               Too many investment products hide behind jargon and fine print. We set out to do things differently,
-              offering a small range of fixed term investments with clear terms, published target returns, plain English
-              disclosure and technology that lets investors see their money at any time.
+              offering a small range of fixed term investments with clear terms, fixed returns and technology that lets
+              investors see their money at any time.
             </p>
             <p className="mt-4 text-slate-600">
               Today we serve individuals, families, retirees, companies, trusts and self managed super funds across
