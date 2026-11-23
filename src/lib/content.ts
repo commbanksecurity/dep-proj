@@ -137,7 +137,7 @@ export const team = [
   { name: "Marcus Dalton", role: "Managing Director", photo: "/team/marcus-dalton.jpeg", bio: "Leads strategy and investor relationships. Background in funds management and corporate finance." },
   { name: "Christian Connor", role: "Chief Investment Officer", photo: "/team/christian-connor.jpeg", bio: "Chairs the Investment Committee and sets the fund's asset allocation and credit policy." },
   { name: "Rebecca Crawford", role: "Head Of Compliance & Governance", photo: "/team/rebecca-crawford.jpeg", bio: "Oversees the compliance plan, AML/CTF program, governance framework and regulatory reporting." },
-  { name: "Cameron Shaw", role: "Head Of Client Services", photo: "/team/cameron-shaw.jpeg", bio: "Runs our local based support team and the investor portal experience." },
+  { name: "Cameron Shaw", role: "Head Of Client Services", photo: "/team/cameron-shaw.jpeg", photoOffset: 7, bio: "Runs our local based support team and the investor portal experience for every investor." },
 ];
 
 /* ---------------------------------------------------------------- Reviews */

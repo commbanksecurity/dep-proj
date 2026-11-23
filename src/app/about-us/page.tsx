@@ -133,12 +133,26 @@ export default function AboutPage() {
             {team.map((m) => (
               <div key={m.role} className="overflow-hidden rounded-2xl border border-slate-200 bg-white text-center shadow-sm">
                 <div className="relative aspect-[4/3] bg-navy-950">
+                  {"photoOffset" in m && (
+                    // Photo is nudged down to line up heads; fill the gap above by stretching the
+                    // photo's top 1% (plain background, clear of the head) over the gap.
+                    <div
+                      aria-hidden
+                      className="absolute inset-x-0 top-0 bg-top bg-no-repeat"
+                      style={{
+                        height: m.photoOffset,
+                        backgroundImage: `url(${m.photo})`,
+                        backgroundSize: `100% ${m.photoOffset * 100}px`,
+                      }}
+                    />
+                  )}
                   <Image
                     src={m.photo}
                     alt={`${m.name}, ${m.role}`}
                     fill
                     sizes="(min-width:1024px) 25vw, (min-width:640px) 50vw, 100vw"
                     className="object-cover object-top"
+                    style={"photoOffset" in m ? { objectPosition: `center ${m.photoOffset}px` } : undefined}
                   />
                 </div>
                 <div className="p-6">
