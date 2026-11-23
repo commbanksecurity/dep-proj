@@ -191,11 +191,9 @@ export default function AboutPage() {
           <SectionHeading title="Company Registration Details" subtitle="Who we are, legally, so you always know who you're dealing with." />
           <dl className="divide-y divide-slate-200 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
             {[
-              ["Trading name", site.name],
+              ["Entity name", site.name],
               ["ABN", site.abn],
               ["Australian Financial Services Licence", site.afsl],
-              ["Responsible entity of the fund", site.responsibleEntity],
-              ["External dispute resolution", "Australian Financial Complaints Authority (AFCA). Membership details to be confirmed"],
               ["Headquarter", site.address],
               ["Phone", site.phone],
               ["Email", site.email],
