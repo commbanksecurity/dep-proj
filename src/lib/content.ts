@@ -117,8 +117,8 @@ export const needToApply = [
 /* ---------------------------------------------------------------- About */
 
 export const values = [
-  { title: "Integrity", text: "We say what we do and do what we say. Rates, fees and risks are always shown together." },
-  { title: "Transparency", text: "Plain English documents, clear reporting and no hidden fees at maturity." },
+  { title: "Integrity", text: "We say what we do and do what we say. Rates, fees and clear terms are always shown together." },
+  { title: "Transparency", text: "Clear documents and reporting, with no hidden fees at maturity." },
   { title: "Prudence", text: "We favour conservative, income focused assets and disciplined lending criteria." },
   { title: "Service", text: "Real people based in Australia who pick up the phone and answer your questions." },
   { title: "Accountability", text: "Independent custody, audited accounts and a clear complaints process." },
@@ -132,12 +132,12 @@ export const milestones = [
   { year: "Next", text: "Expanding our product range and investor education programme across Australia." },
 ];
 
-/** PLACEHOLDER team – replace with real names, photos and bios. */
+/** Management team. Photos live in /public/team. */
 export const team = [
-  { name: "[Managing Director]", role: "Managing Director", initials: "MD", bio: "Leads strategy and investor relationships. Background in funds management and corporate finance." },
-  { name: "[Chief Investment Officer]", role: "Chief Investment Officer", initials: "CIO", bio: "Chairs the Investment Committee and sets the fund's asset allocation and credit policy." },
-  { name: "[Head of Compliance]", role: "Head of Risk & Compliance", initials: "RC", bio: "Oversees the compliance plan, AML/CTF programme and regulatory reporting." },
-  { name: "[Head of Client Services]", role: "Head of Client Services", initials: "CS", bio: "Runs our Australian based support team and the investor portal experience." },
+  { name: "Marcus Dalton", role: "Managing Director", photo: "/team/marcus-dalton.jpeg", bio: "Leads strategy and investor relationships. Background in funds management and corporate finance." },
+  { name: "Christian Connor", role: "Chief Investment Officer", photo: "/team/christian-connor.jpeg", bio: "Chairs the Investment Committee and sets the fund's asset allocation and credit policy." },
+  { name: "Rebecca Crawford", role: "Head Of Compliance & Governance", photo: "/team/rebecca-crawford.jpeg", bio: "Oversees the compliance plan, AML/CTF program, governance framework and regulatory reporting." },
+  { name: "Cameron Shaw", role: "Head Of Client Services", photo: "/team/cameron-shaw.jpeg", bio: "Runs our local based support team and the investor portal experience." },
 ];
 
 /* ---------------------------------------------------------------- Reviews */

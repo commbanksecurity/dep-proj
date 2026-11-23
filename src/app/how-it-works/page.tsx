@@ -100,7 +100,7 @@ export default function HowItWorksPage() {
           <Photo id={photos.onlineForm} alt="Applying online on a laptop" sizes="(min-width:1024px) 50vw, 100vw" className="aspect-[4/3] rounded-2xl shadow-2xl" />
           <div>
             <Eyebrow>Before you start</Eyebrow>
-            <h2 className="font-serif text-3xl text-navy-900 sm:text-4xl">What you&apos;ll need to apply</h2>
+            <h2 className="font-serif text-3xl text-navy-900 sm:text-4xl">What You&apos;ll Need To Apply</h2>
             <div className="gold-divider mt-4 w-24" />
             <p className="mt-6 text-slate-600">Having these ready means you can complete your application in one sitting.</p>
             <div className="mt-8">

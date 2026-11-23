@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Compass, Eye, Gem, Handshake, HeartHandshake, Scale, ShieldCheck, Target, TrendingUp } from "lucide-react";
 import {
   CheckList,
@@ -7,7 +8,6 @@ import {
   GoldButton,
   PageHero,
   Photo,
-  PreviewNotice,
   SectionHeading,
 } from "@/components/ui";
 import { milestones, photos, team, values } from "@/lib/content";
@@ -35,7 +35,7 @@ export default function AboutPage() {
         <div className="mx-auto grid max-w-7xl items-center gap-14 px-5 lg:grid-cols-2 lg:px-8">
           <div>
             <Eyebrow>Our story</Eyebrow>
-            <h2 className="font-serif text-3xl text-navy-900 sm:text-4xl">An Australian Investment Manager Built on Clarity</h2>
+            <h2 className="font-serif text-3xl text-navy-900 sm:text-4xl">An Australian Investment Manager Built On Clarity</h2>
             <div className="gold-divider mt-4 w-24" />
             <p className="mt-6 text-lg text-slate-600">
               Golden Age Capital was founded in Melbourne by a team of professionals from funds management,
@@ -55,7 +55,7 @@ export default function AboutPage() {
           <div className="relative">
             <Photo id={photos.office} alt="Golden Age Capital office" sizes="(min-width:1024px) 50vw, 100vw" className="aspect-[4/3] rounded-2xl shadow-2xl" />
             <div className="absolute -bottom-8 -left-4 hidden max-w-xs rounded-2xl border border-gold-500/30 bg-navy-900 p-6 shadow-2xl sm:block">
-              <p className="font-serif text-lg text-gold-400">Melbourne headquartered</p>
+              <p className="font-serif text-lg text-gold-400">Headquarter</p>
               <p className="mt-1 text-sm text-white/75">{site.address}</p>
             </div>
           </div>
@@ -68,7 +68,7 @@ export default function AboutPage() {
           {[
             { icon: Target, title: "Our Mission", text: "To help Australians work towards their financial goals through secure, transparent and well managed fixed term investment opportunities." },
             { icon: Compass, title: "Our Vision", text: "To be Australia's most trusted name in fixed term investing, known for honesty, service and investments people genuinely understand." },
-            { icon: Gem, title: "Our Promise", text: "Rates, fees and risks shown together. Real people to talk to. Your money held independently and reported clearly." },
+            { icon: Gem, title: "Our Promise", text: "Fixed rates and clear terms from day one. Real people to talk to. Your money held independently and reported clearly." },
           ].map(({ icon: Icon, title, text }) => (
             <div key={title} className="gold-ring rounded-2xl bg-navy-900/70 p-8">
               <Icon className="h-10 w-10 text-gold-400" strokeWidth={1.4} />
@@ -85,11 +85,11 @@ export default function AboutPage() {
           <Photo id={photos.coinPlant} alt="Coins with a growing seedling" sizes="(min-width:1024px) 50vw, 100vw" className="aspect-[4/3] rounded-2xl shadow-2xl" />
           <div>
             <Eyebrow>Investment philosophy</Eyebrow>
-            <h2 className="font-serif text-3xl text-navy-900 sm:text-4xl">Disciplined, conservative and income focused</h2>
+            <h2 className="font-serif text-3xl text-navy-900 sm:text-4xl">Disciplined, Conservative And Income Focused</h2>
             <div className="gold-divider mt-4 w-24" />
             <p className="mt-6 text-slate-600">
-              Our Investment Committee meets monthly to review the fund&apos;s portfolio, earnings and target rates. We
-              favour Australian income producing assets, apply strict credit and concentration limits, and keep
+              Our Investment Committee meets monthly to review the fund&apos;s portfolio and asset performance. We
+              favour Australian income-producing assets, apply strict credit and concentration limits, and keep
               sufficient liquidity to meet scheduled maturities.
             </p>
             <div className="mt-8">
@@ -97,7 +97,7 @@ export default function AboutPage() {
                 items={[
                   "Capital preservation ahead of chasing higher returns",
                   "Diversification across assets, borrowers and maturities",
-                  "Target rates set from actual earnings, reviewed monthly",
+                  "Fixed rates locked in from day one for your entire investment term",
                   "Independent custody, audit and compliance oversight",
                 ]}
               />
@@ -129,18 +129,21 @@ export default function AboutPage() {
       <section className="bg-white py-24">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
           <SectionHeading title="Management Team" subtitle="Experienced professionals accountable for your investment." />
-          <PreviewNotice>Preview only: team names and bios are placeholders. Replace with your real management team before launch.</PreviewNotice>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {team.map((m) => (
               <div key={m.role} className="overflow-hidden rounded-2xl border border-slate-200 bg-white text-center shadow-sm">
-                <div className="bg-navy-gradient flex h-44 items-center justify-center">
-                  <div className="flex h-24 w-24 items-center justify-center rounded-full font-serif text-2xl text-gold-300 ring-2 ring-gold-400">
-                    {m.initials}
-                  </div>
+                <div className="relative aspect-[4/3] bg-navy-950">
+                  <Image
+                    src={m.photo}
+                    alt={`${m.name}, ${m.role}`}
+                    fill
+                    sizes="(min-width:1024px) 25vw, (min-width:640px) 50vw, 100vw"
+                    className="object-cover object-top"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="font-serif text-lg text-navy-900">{m.name}</h3>
-                  <p className="text-sm font-semibold text-gold-700">{m.role}</p>
+                  <p className="text-sm font-semibold text-gold-700 whitespace-nowrap">{m.role}</p>
                   <p className="mt-3 text-sm text-slate-600">{m.bio}</p>
                 </div>
               </div>
@@ -175,7 +178,7 @@ export default function AboutPage() {
               ["Australian Financial Services Licence", site.afsl],
               ["Responsible entity of the fund", site.responsibleEntity],
               ["External dispute resolution", "Australian Financial Complaints Authority (AFCA). Membership details to be confirmed"],
-              ["Registered office", site.address],
+              ["Headquarter", site.address],
               ["Phone", site.phone],
               ["Email", site.email],
             ].map(([k, v]) => (

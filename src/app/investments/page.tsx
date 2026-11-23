@@ -124,7 +124,7 @@ export default function InvestmentsPage() {
             ]}
           />
           <p className="mt-4 text-center text-xs text-white/50">
-            *Target returns as at {site.ratesAsAt}, net of fees. Variable, reviewed monthly and not guaranteed.
+            Fixed rates for 2026, net of fees, locked in for the selected term subject to the PDS.
           </p>
         </div>
       </section>
@@ -157,7 +157,7 @@ export default function InvestmentsPage() {
       {/* COMPARE */}
       <section id="compare" className="scroll-mt-36 bg-mist py-24">
         <div className="mx-auto max-w-5xl px-5 lg:px-8">
-          <SectionHeading title="Investment Terms at a Glance" subtitle="Compare every feature side by side." />
+          <SectionHeading title="Investment Terms At A Glance" subtitle="Compare every feature side by side." />
           <div className="overflow-x-auto rounded-2xl border border-slate-200 bg-white shadow-sm">
             <table className="w-full text-left text-sm">
               <thead className="bg-navy-900 text-gold-300">
@@ -189,7 +189,7 @@ export default function InvestmentsPage() {
         <div className="mx-auto grid max-w-7xl items-center gap-14 px-5 lg:grid-cols-2 lg:px-8">
           <div>
             <Eyebrow>Return structures</Eyebrow>
-            <h2 className="font-serif text-3xl text-navy-900 sm:text-4xl">Choose how you receive your returns</h2>
+            <h2 className="font-serif text-3xl text-navy-900 sm:text-4xl">Choose How You Receive Your Returns</h2>
             <div className="gold-divider mt-4 w-24" />
             <p className="mt-6 text-slate-600">
               Each investment term pays a fixed rate locked in from the day your funds are invested, with our management margin already deducted from the rates shown.
@@ -237,7 +237,7 @@ export default function InvestmentsPage() {
             ))}
           </div>
           <div className="mx-auto mt-12 max-w-3xl rounded-2xl border border-white/10 bg-navy-950/50 p-8">
-            <h3 className="font-serif text-xl text-white">These products may suit you if you:</h3>
+            <h3 className="font-serif text-xl text-white">These products may suit if you:</h3>
             <div className="mt-5">
               <CheckList
                 light

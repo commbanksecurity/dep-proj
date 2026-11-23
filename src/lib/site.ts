@@ -14,7 +14,7 @@ export const site = {
   // PLACEHOLDER contact details (taken from the design mockup)
   phone: "1300 123 456",
   email: "info@goldenagecapital.com.au",
-  address: "Level 12, 123 Collins Street, Melbourne VIC 3000",
+  address: "130 Little Collins Street, Melbourne VIC 3000",
   hours: "Mon to Fri, 9:00am to 5:30pm AEST",
   abn: "72 607 858 131",
   afsl: "AFSL 493772",

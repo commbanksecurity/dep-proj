@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 const items = [
   { icon: Phone, label: "Call us", value: site.phone, href: `tel:${site.phone.replace(/ /g, "")}` },
   { icon: Mail, label: "Email", value: site.email, href: `mailto:${site.email}` },
-  { icon: MapPin, label: "Visit", value: site.address },
+  { icon: MapPin, label: "Headquarter", value: site.address },
   { icon: Clock, label: "Business hours", value: site.hours },
 ];
 
@@ -72,7 +72,7 @@ export default function ContactPage() {
             <ContactForm />
           </div>
           <div className="flex flex-col">
-            <Eyebrow>Business address</Eyebrow>
+            <Eyebrow>Headquarter</Eyebrow>
             <h2 className="font-serif text-3xl text-navy-900">Visit our office</h2>
             <div className="gold-divider mb-8 mt-4 w-24" />
             <div className="flex-1 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
