@@ -10,7 +10,7 @@ import {
   Photo,
   SectionHeading,
 } from "@/components/ui";
-import { milestones, photos, team, values } from "@/lib/content";
+import { partners, photos, team, values } from "@/lib/content";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -166,18 +166,22 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* MILESTONES */}
+      {/* PARTNERS */}
       <section className="bg-navy-950 py-24">
         <div className="mx-auto max-w-5xl px-5 lg:px-8">
-          <SectionHeading light title="Our Journey" />
-          <div className="grid gap-6 md:grid-cols-4">
-            {milestones.map((m) => (
-              <div key={m.year} className="border-t-2 border-gold-500 pt-5">
-                <p className="font-serif text-3xl text-gold-gradient">{m.year}</p>
-                <p className="mt-3 text-sm text-white/70">{m.text}</p>
-              </div>
+          <SectionHeading light title="Our Partners" />
+          <ul className="grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-6">
+            {partners.map((p) => (
+              <li
+                key={p.name}
+                className="flex h-28 items-center justify-center rounded-2xl bg-white px-6 shadow-lg ring-1 ring-gold-500/30"
+              >
+                <div className={`relative w-full ${"tall" in p ? "h-14" : "h-10"}`}>
+                  <Image src={p.logo} alt={p.name} fill sizes="200px" className="object-contain" />
+                </div>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       </section>
 

@@ -132,6 +132,15 @@ export const milestones = [
   { year: "Next", text: "Expanding our product range and investor education programme across Australia." },
 ];
 
+/** Partner logos (whitespace-trimmed copies) live in /public/partners. */
+export const partners = [
+  { name: "Macquarie", logo: "/partners/macquarie.png" },
+  { name: "ING", logo: "/partners/ing.png" },
+  // Squarer logo, so it gets more height to look the same size as the others.
+  { name: "AMP", logo: "/partners/amp.png", tall: true },
+  { name: "Suncorp", logo: "/partners/suncorp.png" },
+];
+
 /** Management team. Photos live in /public/team. */
 export const team = [
   { name: "Marcus Dalton", role: "Managing Director", photo: "/team/marcus-dalton.jpeg", bio: "Leads strategy and investor relationships. Background in funds management and corporate finance." },
