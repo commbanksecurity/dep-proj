@@ -193,7 +193,7 @@ export default function AboutPage() {
             {[
               ["Entity name", site.name],
               ["ABN", site.abn],
-              ["Australian Financial Services Licence", site.afsl],
+              ["AFSL", site.afsl],
               ["Headquarter", site.address],
               ["Phone", site.phone],
               ["Email", site.email],

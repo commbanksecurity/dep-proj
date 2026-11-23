@@ -17,7 +17,7 @@ export const site = {
   address: "130 Little Collins Street, Melbourne VIC 3000",
   hours: "Mon to Fri, 9:00am to 5:30pm AEST",
   abn: "72 607 858 131",
-  afsl: "AFSL 493772",
+  afsl: "493772",
   responsibleEntity: "Golden Age Capital Pty Ltd",
   // Set to false once real, verified reviews replace the sample testimonials.
   showSampleReviewNotice: false,
