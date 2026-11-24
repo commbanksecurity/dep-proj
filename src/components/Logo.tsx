@@ -31,12 +31,16 @@ export function LogoMark({ className = "h-12 w-12" }: { className?: string }) {
 
 export function Logo({ compact = false }: { compact?: boolean }) {
   return (
-    <Link href="/" className="flex items-center gap-3" aria-label="Golden Age Capital home">
-      <LogoMark className={compact ? "h-10 w-10" : "h-12 w-12"} />
-      <span className="h-10 w-px bg-gold-500/60" />
-      <span className="whitespace-nowrap leading-tight">
-        <span className="block font-serif text-base tracking-wide text-white xl:text-xl">GOLDEN AGE</span>
-        <span className="block text-center text-[11px] tracking-[0.5em] text-gold-400">CAPITAL</span>
+    <Link href="/" className="flex shrink-0 items-center gap-3" aria-label="Golden Age Capital home">
+      <LogoMark className={compact ? "h-11 w-11 shrink-0" : "h-12 w-12 shrink-0 xl:h-[52px] xl:w-[52px]"} />
+      <span className={`w-px shrink-0 bg-gold-500/60 ${compact ? "h-11" : "h-11 xl:h-12"}`} />
+      <span
+        className={`flex flex-col items-center gap-0.5 whitespace-nowrap font-serif leading-[1.15] tracking-[0.08em] ${
+          compact ? "text-lg" : "text-lg xl:text-xl"
+        }`}
+      >
+        <span className="text-white">GOLDEN AGE</span>
+        <span className="text-gold-400">CAPITAL</span>
       </span>
     </Link>
   );
