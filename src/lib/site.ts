@@ -15,7 +15,7 @@ export const site = {
   phone: "1300 123 456",
   email: "info@goldenagecapital.com.au",
   address: "130 Little Collins Street, Melbourne VIC 3000",
-  hours: "Mon to Fri, 9:00am to 5:30pm AEST",
+  hours: "Mon to Fri, 9:00am to 6:00pm AEST",
   abn: "72 607 858 131",
   afsl: "493772",
   responsibleEntity: "Golden Age Capital Pty Ltd",

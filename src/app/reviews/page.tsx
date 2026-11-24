@@ -62,7 +62,7 @@ export default function ReviewsPage() {
         <div className="mx-auto grid max-w-7xl items-center gap-14 px-5 lg:grid-cols-2 lg:px-8">
           <div>
             <Eyebrow light>Customer service</Eyebrow>
-            <h2 className="font-serif text-3xl text-white sm:text-4xl">Service our investors talk about</h2>
+            <h2 className="font-serif text-3xl text-white sm:text-4xl">Service Our Investors Talk About</h2>
             <div className="gold-divider mt-4 w-24" />
             <p className="mt-6 text-white/75">
               Every enquiry is handled by our Melbourne based client services team. We track how quickly we respond,
@@ -71,7 +71,7 @@ export default function ReviewsPage() {
             </p>
             <div className="mt-8 space-y-4">
               {[
-                ["Clear explanations", "Investors consistently tell us they value plain English answers about risks and returns."],
+                ["Clear explanations", "Investors consistently tell us they value clear answers about fixed rates and terms."],
                 ["Fast verification", "Most identity checks are completed electronically on the same day."],
                 ["Proactive reminders", "Maturity reminders 30 days ahead mean no surprises at the end of a term."],
               ].map(([t, d]) => (

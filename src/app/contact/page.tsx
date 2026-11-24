@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { CalendarDays, Clock, Headset, Mail, MapPin, MessageSquareWarning, Phone, Users, Video } from "lucide-react";
+import { CalendarClock, CalendarDays, Clock, Headset, Mail, MailOpen, MapPin, MessageSquareWarning, Phone } from "lucide-react";
 import { ContactForm } from "@/components/ContactForm";
 import { CtaBanner, Eyebrow, PageHero, SectionHeading } from "@/components/ui";
 import { photos } from "@/lib/content";
@@ -20,8 +20,8 @@ const items = [
 
 const consultations = [
   { icon: Phone, title: "Phone call", text: "A 20 minute call to talk through our products and answer your questions." },
-  { icon: Video, title: "Video meeting", text: "Meet our team online from anywhere in Australia, at a time that suits you." },
-  { icon: Users, title: "In person", text: "Visit our Collins Street office in Melbourne for a face to face consultation." },
+  { icon: CalendarClock, title: "Scheduled callback", text: "Pick a time that suits you and a specialist will call you directly." },
+  { icon: MailOpen, title: "Email enquiry", text: "Send your questions in writing and receive a detailed response from our client services team." },
 ];
 
 const support = [
@@ -38,7 +38,7 @@ export default function ContactPage() {
         subtitle="Get in touch with our team for any enquiries."
         photo={photos.melbourne}
       >
-        <p>Our Australian based team responds to every enquiry within one business day.</p>
+        <p>Our team responds to every enquiry within one business day.</p>
       </PageHero>
 
       {/* CONTACT CARDS */}
@@ -96,7 +96,7 @@ export default function ContactPage() {
       {/* CONSULTATIONS */}
       <section className="bg-navy-gradient py-24">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
-          <SectionHeading light title="Book a Consultation" subtitle="Prefer to talk it through? Choose the way that works best for you. There's no cost or obligation." />
+          <SectionHeading light title="Book A Consultation" subtitle="Prefer to talk it through? Choose the way that works best for you. There's no cost or obligation." />
           <div className="grid gap-6 md:grid-cols-3">
             {consultations.map(({ icon: Icon, title, text }) => (
               <div key={title} className="gold-ring rounded-2xl bg-navy-900/70 p-8 text-center">

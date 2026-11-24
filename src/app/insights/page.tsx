@@ -85,7 +85,7 @@ export default function InsightsPage() {
       {/* GLOSSARY */}
       <section id="glossary" className="scroll-mt-28 bg-white py-24">
         <div className="mx-auto max-w-5xl px-5 lg:px-8">
-          <SectionHeading title="Investment Terminology" subtitle="Common terms explained in plain English." />
+          <SectionHeading title="Investment Terminology" subtitle="Common terms explained clearly." />
           <dl className="grid gap-4 sm:grid-cols-2">
             {glossary.map((g) => (
               <div key={g.term} className="rounded-xl border border-slate-200 p-6">

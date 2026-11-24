@@ -196,8 +196,8 @@ export const faqCategories: FaqCategory[] = [
     title: "Investment questions",
     items: [
       { q: "What exactly am I investing in?", a: "You acquire units in a registered managed investment scheme for a fixed term. The fund pools investor money and invests in Australian income producing assets according to its investment policy, set out in the Product Disclosure Statement (PDS)." },
-      { q: "Is this a term deposit?", a: "No. Our fixed term investments are not bank deposits and are not covered by the Australian Government deposit guarantee (Financial Claims Scheme). They carry different risks to a term deposit, which is why target returns are higher." },
-      { q: "Are returns guaranteed?", a: "No. Rates shown are target returns. They are variable, reviewed monthly and depend on what the fund actually earns. Actual returns may be lower than the target, or nil, and you could lose some or all of your capital." },
+      { q: "Is this a term deposit?", a: "No. Our fixed term investments are not bank deposits and are not covered by the Australian Government deposit guarantee (Financial Claims Scheme). They operate under a different structure to a term deposit, which is why fixed rates are higher." },
+      { q: "Are returns guaranteed?", a: "Yes. Once your investment is confirmed, your fixed rate and scheduled returns are guaranteed for your selected term." },
       { q: "What is the minimum investment?", a: "$10,000 for the 6 month term and $25,000 for the 12 and 24 month terms. There is no maximum, although large applications may be subject to additional checks." },
       { q: "Who can invest?", a: "Australian residents aged 18 and over, including individuals, joint investors, companies, trusts and SMSFs, who fall within the product's Target Market Determination (TMD)." },
       { q: "Should I get financial advice?", a: "Information on this website is general only. We recommend you consider your own circumstances and speak with a licensed financial adviser before investing." },
@@ -229,8 +229,8 @@ export const faqCategories: FaqCategory[] = [
     items: [
       { q: "How do I pay for my investment?", a: "By PayID or standard bank transfer from an Australian bank account in your name, using the unique reference shown in your portal. We never accept cash, cards or cryptocurrency." },
       { q: "When are returns paid?", a: "For monthly options, returns are paid on or around the first business day of each month. For at maturity options, returns are paid with your capital at the end of the term." },
-      { q: "Can my target rate change during my term?", a: "Target rates are variable and reviewed monthly. The rate you receive depends on the fund's actual earnings and may change during your term. Changes are published on our website and in the portal." },
-      { q: "Are there any fees?", a: "There are no application fees and no fees at maturity. Management costs are paid by the fund and are reflected in the target rate, which is shown after fees. Full fee details are in the PDS." },
+      { q: "Can my target rate change during my term?", a: "No. Once your investment is confirmed, your fixed rate is locked in and guaranteed for the entire duration of your selected term. It will not change regardless of market movements." },
+      { q: "Are there any fees?", a: "There are no application fees and no fees at maturity. Management costs are paid by the fund and are already reflected in your fixed rate, which is shown net of fees. Full fee details are set out in the PDS." },
       { q: "How are returns taxed?", a: "Returns are generally assessable income. We issue an annual tax statement each July. Providing your TFN avoids tax being withheld at the highest marginal rate." },
     ],
   },
@@ -288,13 +288,13 @@ export const articles: Article[] = [
     title: "Fixed term investment vs term deposit: understanding the difference",
     category: "Investor education",
     date: "28 October 2026",
-    excerpt: "They sound similar, but the protections, risks and returns are different. Here's a plain English comparison.",
+    excerpt: "They sound similar, but the protections, risks and returns are different. Here's a clear comparison.",
     photo: "1554224154-26032ffc0d07",
     body: [
       { p: "A bank term deposit and a fixed term managed investment can look alike: both ask you to commit money for a set period in exchange for a return. Underneath, they work very differently." },
       { h: "Who holds the risk", p: "Bank term deposits up to $250,000 per person per institution are covered by the Australian Government's Financial Claims Scheme. Managed investment schemes are not. If the fund's assets underperform, your returns and capital can be affected." },
       { h: "Why returns differ", p: "Because investors take on more risk, managed fixed term products generally offer higher target returns. A target return is not a promise. It can change and may not be achieved." },
-      { h: "Questions to ask", p: "What does the fund invest in? Who is the custodian? What happens if many investors want their money back at once? A good PDS answers all of these in plain English." },
+      { h: "Questions to ask", p: "What does the fund invest in? Who is the custodian? What happens if many investors want their money back at once? A good PDS answers all of these clearly." },
     ],
   },
   {
@@ -355,8 +355,8 @@ export const articles: Article[] = [
 ];
 
 export const glossary = [
-  { term: "Target return", def: "The return the fund aims to pay, shown as a percentage per annum after fees. It is variable and not a promise." },
-  { term: "PDS", def: "Product Disclosure Statement: the legal document describing the product, its fees, risks and how to apply." },
+  { term: "Fixed return", def: "The guaranteed rate your investment earns per annum after fees, locked in for the entire duration of your selected term." },
+  { term: "PDS", def: "Product Disclosure Statement: the legal document describing the product, its fees, terms and how to apply." },
   { term: "TMD", def: "Target Market Determination: describes the type of investor a product is designed for." },
   { term: "Responsible entity", def: "The licensed company that operates a registered managed investment scheme and is responsible to investors." },
   { term: "Custodian", def: "An independent company that holds the fund's assets on behalf of investors, separate from the manager." },

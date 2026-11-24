@@ -49,7 +49,7 @@ export default function FaqsPage() {
         <div className="mx-auto flex max-w-4xl flex-col items-center gap-6 rounded-2xl bg-navy-gradient px-8 py-12 text-center">
           <h2 className="font-serif text-3xl text-white">Still have questions?</h2>
           <p className="max-w-xl text-white/75">
-            Our Australian based team is available {site.hours}. Call {site.phone} or send us a message and we&apos;ll get
+            Our team is available {site.hours}. Call {site.phone} or send us a message and we&apos;ll get
             back to you within one business day.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
